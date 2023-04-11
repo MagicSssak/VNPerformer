@@ -38,20 +38,20 @@ class TransformerEncoder(nn.Module):
                 self.w = gaussian_orthogonal_random_matrix(nb_rows=self.num_random, nb_columns=self.kernel_channel)
 
 
-    def forward(self, q, k, v):
+    def forward(self, x):
         '''
         q: query B, C, 3, N
         k: key   B, C, 3, N
         v: value B, C, 3, N
         '''
 
-        skip = q  # skip is defined as input
-        B, C, _, N = q.shape
+        skip = x # skip is defined as input
+        B, C, _, N = x.shape
 
         # q(k) --> B, C//H * H, 3, N
-        q = self.wq(q)
-        k = self.wk(k)
-        v = self.wv(v)
+        q = self.wq(x)
+        k = self.wk(x)
+        v = self.wv(x)
         # --> B, H, N, C // H * 3
         q = torch.stack(q.transpose(1, -1).split(self.channels_per_head, -1), 3)  ## B N 3 C --> B N 3 H C/H
         k = torch.stack(k.transpose(1, -1).split(self.channels_per_head, -1), 3)

@@ -1,0 +1,767 @@
+diff --git a/wandb/debug-internal.log b/wandb/debug-internal.log
+index e586b5b..36cdee6 120000
+--- a/wandb/debug-internal.log
++++ b/wandb/debug-internal.log
+@@ -1 +1 @@
+-run-20230411_174945-1bg5weza/logs/debug-internal.log
+\ No newline at end of file
++run-20230411_194310-1x10zgzo/logs/debug-internal.log
+\ No newline at end of file
+diff --git a/wandb/debug.log b/wandb/debug.log
+index 73de52e..8ade4e7 120000
+--- a/wandb/debug.log
++++ b/wandb/debug.log
+@@ -1 +1 @@
+-run-20230411_174945-1bg5weza/logs/debug.log
+\ No newline at end of file
++run-20230411_194310-1x10zgzo/logs/debug.log
+\ No newline at end of file
+diff --git a/wandb/latest-run b/wandb/latest-run
+index 3fff70a..66d3a01 120000
+--- a/wandb/latest-run
++++ b/wandb/latest-run
+@@ -1 +1 @@
+-run-20230411_174945-1bg5weza
+\ No newline at end of file
++run-20230411_194310-1x10zgzo
+\ No newline at end of file
+diff --git a/wandb/run-20230411_174945-1bg5weza/files/output.log b/wandb/run-20230411_174945-1bg5weza/files/output.log
+index 39d095f..cd1ef97 100644
+--- a/wandb/run-20230411_174945-1bg5weza/files/output.log
++++ b/wandb/run-20230411_174945-1bg5weza/files/output.log
+@@ -4669,3 +4669,128 @@ TEST (inference) time: 2.141496419906616s
+ Test Instance Accuracy: 0.7024221420288086, Class Accuracy: 0.6449928287445587
+ Best Instance Accuracy: 0.745674729347229, Class Accuracy: 0.6858289799927445
+   5%|████▌                                                                               | 2/37 [00:00<00:14,  2.43it/s]
++ 14%|███████████▎                                                                        | 5/37 [00:03<00:19,  1.67it/s]
++ 22%|██████████████████▏                                                                 | 8/37 [00:05<00:19,  1.50it/s]
++ 30%|████████████████████████▋                                                          | 11/37 [00:07<00:17,  1.46it/s]
++ 35%|█████████████████████████████▏                                                     | 13/37 [00:08<00:17,  1.41it/s]
++ 43%|███████████████████████████████████▉                                               | 16/37 [00:10<00:14,  1.42it/s]
++ 51%|██████████████████████████████████████████▌                                        | 19/37 [00:12<00:12,  1.43it/s]
++ 59%|█████████████████████████████████████████████████▎                                 | 22/37 [00:15<00:10,  1.43it/s]
++ 68%|████████████████████████████████████████████████████████                           | 25/37 [00:17<00:08,  1.43it/s]
++ 76%|██████████████████████████████████████████████████████████████▊                    | 28/37 [00:19<00:06,  1.42it/s]
++ 81%|███████████████████████████████████████████████████████████████████▎               | 30/37 [00:20<00:05,  1.40it/s]
++ 89%|██████████████████████████████████████████████████████████████████████████         | 33/37 [00:22<00:02,  1.41it/s]
++ 97%|████████████████████████████████████████████████████████████████████████████████▊  | 36/37 [00:24<00:00,  1.43it/s]
++ 97%|████████████████████████████████████████████████████████████████████████████████▊  | 36/37 [00:24<00:00,  1.43it/s]
++Train Epoch Accuracy: 0.9801037907600403
++ 70%|██████████████████████████████████████████████████████████▊                         | 7/10 [00:01<00:00,  4.26it/s]
++ 70%|██████████████████████████████████████████████████████████▊                         | 7/10 [00:01<00:00,  4.26it/s]
++TEST (inference) time: 2.155322313308716s
++Test Instance Accuracy: 0.7214533090591431, Class Accuracy: 0.6712507554088566
++Best Instance Accuracy: 0.745674729347229, Class Accuracy: 0.6858289799927445
++  8%|██████▊                                                                             | 3/37 [00:01<00:16,  2.02it/s]
++ 14%|███████████▎                                                                        | 5/37 [00:03<00:19,  1.67it/s]
++ 22%|██████████████████▏                                                                 | 8/37 [00:05<00:19,  1.50it/s]
++ 30%|████████████████████████▋                                                          | 11/37 [00:07<00:17,  1.46it/s]
++ 38%|███████████████████████████████▍                                                   | 14/37 [00:09<00:15,  1.44it/s]
++ 46%|██████████████████████████████████████▏                                            | 17/37 [00:11<00:13,  1.44it/s]
++ 54%|████████████████████████████████████████████▊                                      | 20/37 [00:13<00:11,  1.44it/s]
++ 59%|█████████████████████████████████████████████████▎                                 | 22/37 [00:15<00:10,  1.39it/s]
++ 68%|████████████████████████████████████████████████████████                           | 25/37 [00:17<00:08,  1.39it/s]
++ 76%|██████████████████████████████████████████████████████████████▊                    | 28/37 [00:19<00:06,  1.41it/s]
++ 84%|█████████████████████████████████████████████████████████████████████▌             | 31/37 [00:21<00:04,  1.42it/s]
++ 92%|████████████████████████████████████████████████████████████████████████████▎      | 34/37 [00:23<00:02,  1.40it/s]
++  0%|                                                                                            | 0/10 [00:00<?, ?it/s]
++  0%|                                                                                            | 0/10 [00:00<?, ?it/s]
++Train Epoch Accuracy: 0.9822664260864258
++ 90%|███████████████████████████████████████████████████████████████████████████▌        | 9/10 [00:02<00:00,  4.19it/s]
++ 90%|███████████████████████████████████████████████████████████████████████████▌        | 9/10 [00:02<00:00,  4.19it/s]
++TEST (inference) time: 2.2010421752929688s
++Test Instance Accuracy: 0.7076124548912048, Class Accuracy: 0.6521260953301075
++Best Instance Accuracy: 0.745674729347229, Class Accuracy: 0.6858289799927445
++  8%|██████▊                                                                             | 3/37 [00:01<00:17,  1.95it/s]
++ 16%|█████████████▌                                                                      | 6/37 [00:03<00:20,  1.53it/s]
++ 22%|██████████████████▏                                                                 | 8/37 [00:05<00:20,  1.44it/s]
++ 30%|████████████████████████▋                                                          | 11/37 [00:07<00:18,  1.42it/s]
++ 38%|███████████████████████████████▍                                                   | 14/37 [00:09<00:16,  1.42it/s]
++ 46%|██████████████████████████████████████▏                                            | 17/37 [00:11<00:14,  1.40it/s]
++ 54%|████████████████████████████████████████████▊                                      | 20/37 [00:13<00:12,  1.41it/s]
++ 59%|█████████████████████████████████████████████████▎                                 | 22/37 [00:15<00:10,  1.40it/s]
++ 68%|████████████████████████████████████████████████████████                           | 25/37 [00:17<00:08,  1.39it/s]
++ 76%|██████████████████████████████████████████████████████████████▊                    | 28/37 [00:19<00:06,  1.40it/s]
++ 84%|█████████████████████████████████████████████████████████████████████▌             | 31/37 [00:21<00:04,  1.42it/s]
++ 92%|████████████████████████████████████████████████████████████████████████████▎      | 34/37 [00:23<00:02,  1.40it/s]
++  0%|                                                                                            | 0/10 [00:00<?, ?it/s]
++  0%|                                                                                            | 0/10 [00:00<?, ?it/s]
++Train Epoch Accuracy: 0.9844290614128113
++100%|███████████████████████████████████████████████████████████████████████████████████| 10/10 [00:02<00:00,  4.66it/s]
++100%|███████████████████████████████████████████████████████████████████████████████████| 10/10 [00:02<00:00,  4.66it/s]
++TEST (inference) time: 2.1579599380493164s
++Test Instance Accuracy: 0.7231833934783936, Class Accuracy: 0.6627620785108246
++Best Instance Accuracy: 0.745674729347229, Class Accuracy: 0.6858289799927445
++  8%|██████▊                                                                             | 3/37 [00:01<00:16,  2.02it/s]
++ 16%|█████████████▌                                                                      | 6/37 [00:03<00:19,  1.56it/s]
++ 22%|██████████████████▏                                                                 | 8/37 [00:05<00:19,  1.46it/s]
++ 30%|████████████████████████▋                                                          | 11/37 [00:07<00:18,  1.43it/s]
++ 38%|███████████████████████████████▍                                                   | 14/37 [00:09<00:16,  1.42it/s]
++ 46%|██████████████████████████████████████▏                                            | 17/37 [00:11<00:14,  1.42it/s]
++ 54%|████████████████████████████████████████████▊                                      | 20/37 [00:13<00:12,  1.39it/s]
++ 59%|█████████████████████████████████████████████████▎                                 | 22/37 [00:15<00:10,  1.39it/s]
++ 68%|████████████████████████████████████████████████████████                           | 25/37 [00:17<00:08,  1.38it/s]
++ 76%|██████████████████████████████████████████████████████████████▊                    | 28/37 [00:19<00:06,  1.38it/s]
++ 84%|█████████████████████████████████████████████████████████████████████▌             | 31/37 [00:21<00:04,  1.41it/s]
++ 92%|████████████████████████████████████████████████████████████████████████████▎      | 34/37 [00:23<00:02,  1.41it/s]
++  0%|                                                                                            | 0/10 [00:00<?, ?it/s]
++  0%|                                                                                            | 0/10 [00:00<?, ?it/s]
++Train Epoch Accuracy: 0.9844290614128113
++ 80%|███████████████████████████████████████████████████████████████████▏                | 8/10 [00:01<00:00,  4.24it/s]
++ 80%|███████████████████████████████████████████████████████████████████▏                | 8/10 [00:01<00:00,  4.24it/s]
++TEST (inference) time: 2.189876079559326s
++Test Instance Accuracy: 0.7283737063407898, Class Accuracy: 0.6725264959994415
++Best Instance Accuracy: 0.745674729347229, Class Accuracy: 0.6858289799927445
++  8%|██████▊                                                                             | 3/37 [00:01<00:18,  1.87it/s]
++ 14%|███████████▎                                                                        | 5/37 [00:03<00:19,  1.60it/s]
++ 22%|██████████████████▏                                                                 | 8/37 [00:05<00:19,  1.45it/s]
++ 30%|████████████████████████▋                                                          | 11/37 [00:07<00:18,  1.44it/s]
++ 38%|███████████████████████████████▍                                                   | 14/37 [00:09<00:16,  1.44it/s]
++ 46%|██████████████████████████████████████▏                                            | 17/37 [00:11<00:13,  1.44it/s]
++ 54%|████████████████████████████████████████████▊                                      | 20/37 [00:13<00:11,  1.43it/s]
++ 62%|███████████████████████████████████████████████████▌                               | 23/37 [00:15<00:09,  1.44it/s]
++ 68%|████████████████████████████████████████████████████████                           | 25/37 [00:17<00:08,  1.44it/s]
++ 76%|██████████████████████████████████████████████████████████████▊                    | 28/37 [00:19<00:06,  1.43it/s]
++ 84%|█████████████████████████████████████████████████████████████████████▌             | 31/37 [00:21<00:04,  1.44it/s]
++ 92%|████████████████████████████████████████████████████████████████████████████▎      | 34/37 [00:23<00:02,  1.42it/s]
++ 10%|████████▍                                                                           | 1/10 [00:00<00:02,  3.48it/s]
++ 10%|████████▍                                                                           | 1/10 [00:00<00:02,  3.48it/s]
++Train Epoch Accuracy: 0.9718858003616333
++  0%|                                                                                            | 0/37 [00:00<?, ?it/s]
++  0%|                                                                                            | 0/37 [00:00<?, ?it/s]
++TEST (inference) time: 2.1405961513519287s
++Test Instance Accuracy: 0.6955017447471619, Class Accuracy: 0.6260103493250069
++Best Instance Accuracy: 0.745674729347229, Class Accuracy: 0.6858289799927445
++  8%|██████▊                                                                             | 3/37 [00:01<00:17,  2.00it/s]
++ 16%|█████████████▌                                                                      | 6/37 [00:03<00:19,  1.58it/s]
++ 24%|████████████████████▍                                                               | 9/37 [00:05<00:18,  1.49it/s]
++ 32%|██████████████████████████▉                                                        | 12/37 [00:08<00:17,  1.45it/s]
++ 41%|█████████████████████████████████▋                                                 | 15/37 [00:10<00:15,  1.44it/s]
++ 49%|████████████████████████████████████████▍                                          | 18/37 [00:12<00:13,  1.42it/s]
++ 54%|████████████████████████████████████████████▊                                      | 20/37 [00:13<00:11,  1.42it/s]
++ 62%|███████████████████████████████████████████████████▌                               | 23/37 [00:15<00:09,  1.44it/s]
++ 70%|██████████████████████████████████████████████████████████▎                        | 26/37 [00:17<00:07,  1.44it/s]
++ 78%|█████████████████████████████████████████████████████████████████                  | 29/37 [00:19<00:05,  1.44it/s]
++ 86%|███████████████████████████████████████████████████████████████████████▊           | 32/37 [00:21<00:03,  1.44it/s]
++ 95%|██████████████████████████████████████████████████████████████████████████████▌    | 35/37 [00:24<00:01,  1.44it/s]
++ 95%|██████████████████████████████████████████████████████████████████████████████▌    | 35/37 [00:24<00:01,  1.44it/s]
++Train Epoch Accuracy: 0.9385812878608704
++ 40%|█████████████████████████████████▌                                                  | 4/10 [00:00<00:01,  4.07it/s]
++  3%|██▎                                                                                 | 1/37 [00:00<00:10,  3.39it/s]
++  3%|██▎                                                                                 | 1/37 [00:00<00:10,  3.39it/s]
++TEST (inference) time: 2.1297903060913086s
++Test Instance Accuracy: 0.6730104088783264, Class Accuracy: 0.6007538120692796
++Best Instance Accuracy: 0.745674729347229, Class Accuracy: 0.6858289799927445
++ 11%|█████████                                                                           | 4/37 [00:02<00:18,  1.79it/s]
++ 19%|███████████████▉                                                                    | 7/37 [00:04<00:19,  1.55it/s]
++ 27%|██████████████████████▍                                                            | 10/37 [00:06<00:18,  1.47it/s]
++ 35%|█████████████████████████████▏                                                     | 13/37 [00:08<00:16,  1.45it/s]
++KeyboardInterruptt = points.cuda(), target.cuda()                                       | 15/37 [00:10<00:15,  1.43it/s]
++KeyboardInterruptt = points.cuda(), target.cuda()                                       | 15/37 [00:10<00:15,  1.43it/s]
+\ No newline at end of file
+diff --git a/wandb/run-20230411_174945-1bg5weza/files/wandb-summary.json b/wandb/run-20230411_174945-1bg5weza/files/wandb-summary.json
+index 1e6a052..ce0cab2 100644
+--- a/wandb/run-20230411_174945-1bg5weza/files/wandb-summary.json
++++ b/wandb/run-20230411_174945-1bg5weza/files/wandb-summary.json
+@@ -1 +1 @@
+-{"lr": 9.549150281252633e-05, "_timestamp": 1681256304.8735335, "Train Batch Loss": 0.5271496772766113, "_runtime": 6519.2850115299225, "_step": 472, "Train Epoch Loss": 0.5384466068164723, "Train Acc": 0.9801037907600403, "Inference Time": 2.141496419906616, "Test Acc": 0.7024221420288086, "Test Best Acc": 0.745674729347229, "Test Best Class Acc": 0.6858289799927445}
+\ No newline at end of file
++{"lr": 0.000965510694234587, "_timestamp": 1681256481.054623, "Train Batch Loss": 0.5537356734275818, "_runtime": 6695.466100931168, "_step": 485, "Train Epoch Loss": 0.5852474860242896, "Train Acc": 0.9385812878608704, "Inference Time": 2.1297903060913086, "Test Acc": 0.6730104088783264, "Test Best Acc": 0.745674729347229, "Test Best Class Acc": 0.6858289799927445, "_wandb": {"runtime": 6695}}
+\ No newline at end of file
+diff --git a/wandb/run-20230411_174945-1bg5weza/logs/debug-internal.log b/wandb/run-20230411_174945-1bg5weza/logs/debug-internal.log
+index 50aeb1c..bdbf1f3 100644
+--- a/wandb/run-20230411_174945-1bg5weza/logs/debug-internal.log
++++ b/wandb/run-20230411_174945-1bg5weza/logs/debug-internal.log
+@@ -17185,3 +17185,580 @@
+ 2023-04-11 19:38:26,044 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
+ 2023-04-11 19:38:26,743 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
+ 2023-04-11 19:38:26,767 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:38:27,444 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:38:27,832 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: stop_status
++2023-04-11 19:38:27,832 DEBUG   SenderThread:24583 [sender.py:send_request():317] send_request: stop_status
++2023-04-11 19:38:28,142 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:38:28,790 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:38:28,849 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:38:29,549 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:38:30,246 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:38:30,815 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:38:30,936 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:38:31,634 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:38:32,330 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:38:32,838 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:38:33,038 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:38:33,780 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:38:34,509 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:38:34,860 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:38:35,201 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:38:35,902 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:38:36,603 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:38:36,883 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:38:37,294 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:38:37,989 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:38:38,690 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:38:38,906 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:38:39,383 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:38:40,081 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:38:40,770 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:38:40,928 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:38:41,475 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:38:42,173 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:38:42,402 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:38:42,403 DEBUG   SenderThread:24583 [sender.py:send():303] send: history
++2023-04-11 19:38:42,403 DEBUG   SenderThread:24583 [sender.py:send():303] send: summary
++2023-04-11 19:38:42,406 INFO    SenderThread:24583 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
++2023-04-11 19:38:42,921 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:38:42,950 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/wandb-summary.json
++2023-04-11 19:38:42,951 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:38:42,954 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: stop_status
++2023-04-11 19:38:42,954 DEBUG   SenderThread:24583 [sender.py:send_request():317] send_request: stop_status
++2023-04-11 19:38:43,615 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:38:44,361 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:38:44,973 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:38:45,056 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:38:45,776 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:38:46,216 DEBUG   SenderThread:24583 [sender.py:send():303] send: stats
++2023-04-11 19:38:46,472 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:38:46,998 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:38:47,180 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:38:47,894 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:38:48,591 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:38:49,020 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:38:49,280 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:38:49,990 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:38:50,046 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:38:50,046 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:38:51,043 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:38:52,054 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:38:52,203 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:38:52,204 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:38:52,205 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:38:52,205 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:38:52,285 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:38:52,515 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:38:52,516 DEBUG   SenderThread:24583 [sender.py:send():303] send: history
++2023-04-11 19:38:52,516 DEBUG   SenderThread:24583 [sender.py:send():303] send: summary
++2023-04-11 19:38:52,519 INFO    SenderThread:24583 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
++2023-04-11 19:38:52,976 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:38:53,066 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/wandb-summary.json
++2023-04-11 19:38:53,067 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:38:53,670 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:38:54,077 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:38:54,374 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:38:55,071 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:38:55,088 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:38:55,762 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:38:56,458 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:38:57,111 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:38:57,155 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:38:57,869 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:38:58,026 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: stop_status
++2023-04-11 19:38:58,026 DEBUG   SenderThread:24583 [sender.py:send_request():317] send_request: stop_status
++2023-04-11 19:38:58,565 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:38:59,133 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:38:59,259 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:38:59,956 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:00,656 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:01,155 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:39:01,350 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:02,047 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:02,742 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:03,178 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:39:03,442 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:04,135 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:04,826 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:05,200 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:39:05,521 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:06,220 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:06,917 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:07,224 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:39:07,718 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:08,452 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:09,172 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:09,248 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:39:09,865 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:10,094 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:10,095 DEBUG   SenderThread:24583 [sender.py:send():303] send: history
++2023-04-11 19:39:10,095 DEBUG   SenderThread:24583 [sender.py:send():303] send: summary
++2023-04-11 19:39:10,098 INFO    SenderThread:24583 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
++2023-04-11 19:39:10,260 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/wandb-summary.json
++2023-04-11 19:39:10,559 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:11,266 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:11,272 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:39:11,979 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:12,671 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:13,103 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: stop_status
++2023-04-11 19:39:13,103 DEBUG   SenderThread:24583 [sender.py:send_request():317] send_request: stop_status
++2023-04-11 19:39:13,295 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:39:13,366 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:14,097 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:14,823 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:15,318 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:39:15,541 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:16,217 DEBUG   SenderThread:24583 [sender.py:send():303] send: stats
++2023-04-11 19:39:16,283 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:17,005 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:17,341 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:39:17,711 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:17,768 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:17,768 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:19,367 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:39:19,970 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:19,972 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:19,972 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:19,973 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:20,060 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:20,287 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:20,288 DEBUG   SenderThread:24583 [sender.py:send():303] send: history
++2023-04-11 19:39:20,288 DEBUG   SenderThread:24583 [sender.py:send():303] send: summary
++2023-04-11 19:39:20,291 INFO    SenderThread:24583 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
++2023-04-11 19:39:20,379 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/wandb-summary.json
++2023-04-11 19:39:20,746 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:21,390 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:39:21,476 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:22,212 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:22,946 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:23,413 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:39:23,681 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:24,377 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:25,120 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:25,435 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:39:25,833 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:26,447 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:39:26,538 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:27,250 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:27,958 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:28,179 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: stop_status
++2023-04-11 19:39:28,179 DEBUG   SenderThread:24583 [sender.py:send_request():317] send_request: stop_status
++2023-04-11 19:39:28,471 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:39:28,696 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:29,390 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:30,133 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:30,494 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:39:30,873 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:31,568 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:32,257 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:32,517 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:39:32,975 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:33,676 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:34,369 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:34,540 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:39:35,093 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:35,807 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:36,541 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:36,563 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:39:37,256 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:37,970 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:38,208 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:38,208 DEBUG   SenderThread:24583 [sender.py:send():303] send: history
++2023-04-11 19:39:38,209 DEBUG   SenderThread:24583 [sender.py:send():303] send: summary
++2023-04-11 19:39:38,211 INFO    SenderThread:24583 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
++2023-04-11 19:39:38,587 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/wandb-summary.json
++2023-04-11 19:39:38,588 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:39:38,685 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:39,390 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:40,097 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:40,610 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:39:40,794 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:41,496 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:42,204 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:42,634 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:39:42,942 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:43,251 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: stop_status
++2023-04-11 19:39:43,252 DEBUG   SenderThread:24583 [sender.py:send_request():317] send_request: stop_status
++2023-04-11 19:39:43,647 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:44,354 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:44,657 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:39:45,053 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:45,752 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:45,809 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:45,809 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:46,217 DEBUG   SenderThread:24583 [sender.py:send():303] send: stats
++2023-04-11 19:39:46,682 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:39:47,693 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:39:47,969 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:47,970 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:47,970 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:47,971 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:48,049 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:48,275 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:48,276 DEBUG   SenderThread:24583 [sender.py:send():303] send: history
++2023-04-11 19:39:48,276 DEBUG   SenderThread:24583 [sender.py:send():303] send: summary
++2023-04-11 19:39:48,279 INFO    SenderThread:24583 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
++2023-04-11 19:39:48,705 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/wandb-summary.json
++2023-04-11 19:39:48,706 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:39:48,755 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:49,497 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:49,717 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:39:50,189 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:50,728 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:39:50,896 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:51,621 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:52,355 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:52,752 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:39:53,097 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:53,794 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:54,510 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:54,776 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:39:55,216 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:55,923 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:56,657 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:56,799 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:39:57,353 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:58,054 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:58,322 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: stop_status
++2023-04-11 19:39:58,322 DEBUG   SenderThread:24583 [sender.py:send_request():317] send_request: stop_status
++2023-04-11 19:39:58,755 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:39:58,822 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:39:59,456 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:00,189 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:00,846 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:40:00,947 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:01,665 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:02,390 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:02,870 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:40:03,116 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:03,827 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:04,593 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:04,893 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:40:05,313 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:06,014 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:06,263 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:06,264 DEBUG   SenderThread:24583 [sender.py:send():303] send: history
++2023-04-11 19:40:06,265 DEBUG   SenderThread:24583 [sender.py:send():303] send: summary
++2023-04-11 19:40:06,268 INFO    SenderThread:24583 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
++2023-04-11 19:40:06,746 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:06,917 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/wandb-summary.json
++2023-04-11 19:40:06,918 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:40:07,463 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:08,174 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:08,867 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:08,939 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:40:09,582 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:10,281 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:10,963 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:40:11,009 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:11,713 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:12,406 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:12,986 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:40:13,106 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:13,397 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: stop_status
++2023-04-11 19:40:13,398 DEBUG   SenderThread:24583 [sender.py:send_request():317] send_request: stop_status
++2023-04-11 19:40:13,842 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:13,896 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:13,897 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:15,013 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:40:16,024 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:40:16,088 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:16,089 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:16,089 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:16,090 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:16,218 DEBUG   SenderThread:24583 [sender.py:send():303] send: stats
++2023-04-11 19:40:16,253 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:16,478 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:16,479 DEBUG   SenderThread:24583 [sender.py:send():303] send: history
++2023-04-11 19:40:16,480 DEBUG   SenderThread:24583 [sender.py:send():303] send: summary
++2023-04-11 19:40:16,482 INFO    SenderThread:24583 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
++2023-04-11 19:40:16,946 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:17,036 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/wandb-summary.json
++2023-04-11 19:40:17,038 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:40:17,682 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:18,048 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:40:18,395 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:19,059 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:40:19,102 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:19,815 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:20,587 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:21,083 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:40:21,298 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:22,038 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:22,729 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:23,105 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:40:23,421 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:24,113 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:24,806 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:25,127 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:40:25,500 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:26,196 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:26,889 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:27,147 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:40:27,584 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:28,281 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:28,464 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: stop_status
++2023-04-11 19:40:28,465 DEBUG   SenderThread:24583 [sender.py:send_request():317] send_request: stop_status
++2023-04-11 19:40:28,978 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:29,172 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:40:29,692 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:30,387 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:31,078 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:31,193 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:40:31,768 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:32,485 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:33,171 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:33,214 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:40:33,897 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:34,139 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:34,140 DEBUG   SenderThread:24583 [sender.py:send():303] send: history
++2023-04-11 19:40:34,140 DEBUG   SenderThread:24583 [sender.py:send():303] send: summary
++2023-04-11 19:40:34,143 INFO    SenderThread:24583 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
++2023-04-11 19:40:34,225 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/wandb-summary.json
++2023-04-11 19:40:34,597 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:35,235 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:40:35,288 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:35,979 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:36,671 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:37,256 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:40:37,367 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:38,075 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:38,777 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:39,276 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:40:39,473 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:40,203 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:40,912 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:41,297 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:40:41,611 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:41,663 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:41,664 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:43,321 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:40:43,533 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: stop_status
++2023-04-11 19:40:43,534 DEBUG   SenderThread:24583 [sender.py:send_request():317] send_request: stop_status
++2023-04-11 19:40:43,806 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:43,807 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:43,807 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:43,808 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:43,888 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:44,119 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:44,120 DEBUG   SenderThread:24583 [sender.py:send():303] send: history
++2023-04-11 19:40:44,121 DEBUG   SenderThread:24583 [sender.py:send():303] send: summary
++2023-04-11 19:40:44,123 INFO    SenderThread:24583 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
++2023-04-11 19:40:44,332 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/wandb-summary.json
++2023-04-11 19:40:44,333 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:40:44,592 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:45,307 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:45,344 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:40:46,008 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:46,219 DEBUG   SenderThread:24583 [sender.py:send():303] send: stats
++2023-04-11 19:40:46,728 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:47,367 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:40:47,423 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:48,114 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:48,810 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:49,389 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:40:49,501 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:50,194 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:50,909 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:51,411 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:40:51,604 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:52,294 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:52,983 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:53,434 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:40:53,685 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:54,378 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:55,105 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:55,456 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:40:55,812 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:56,531 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:57,214 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:57,479 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:40:57,911 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:58,603 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:58,610 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: stop_status
++2023-04-11 19:40:58,610 DEBUG   SenderThread:24583 [sender.py:send_request():317] send_request: stop_status
++2023-04-11 19:40:59,292 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:40:59,502 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:40:59,986 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:41:00,677 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:41:01,366 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:41:01,525 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:41:01,603 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:41:01,604 DEBUG   SenderThread:24583 [sender.py:send():303] send: history
++2023-04-11 19:41:01,605 DEBUG   SenderThread:24583 [sender.py:send():303] send: summary
++2023-04-11 19:41:01,607 INFO    SenderThread:24583 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
++2023-04-11 19:41:02,069 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:41:02,537 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/wandb-summary.json
++2023-04-11 19:41:02,767 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:41:03,463 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:41:03,549 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:41:04,156 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:41:04,850 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:41:05,547 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:41:05,571 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:41:06,242 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:41:06,929 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:41:07,592 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:41:07,627 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:41:08,319 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:41:08,603 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:41:09,010 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:41:09,065 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:41:09,066 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:41:09,615 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:41:10,626 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:41:11,196 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:41:11,198 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:41:11,198 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:41:11,199 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:41:11,290 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:41:11,516 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:41:11,517 DEBUG   SenderThread:24583 [sender.py:send():303] send: history
++2023-04-11 19:41:11,517 DEBUG   SenderThread:24583 [sender.py:send():303] send: summary
++2023-04-11 19:41:11,520 INFO    SenderThread:24583 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
++2023-04-11 19:41:11,639 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/wandb-summary.json
++2023-04-11 19:41:11,974 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:41:12,651 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:41:12,682 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:41:13,373 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:41:13,662 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:41:13,681 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: stop_status
++2023-04-11 19:41:13,681 DEBUG   SenderThread:24583 [sender.py:send_request():317] send_request: stop_status
++2023-04-11 19:41:14,067 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:41:14,673 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:41:14,770 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:41:15,461 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:41:16,142 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:41:16,219 DEBUG   SenderThread:24583 [sender.py:send():303] send: stats
++2023-04-11 19:41:16,697 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:41:16,850 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:41:17,547 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:41:18,239 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:41:18,719 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:41:18,928 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:41:19,642 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:41:20,340 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:41:20,742 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:41:21,055 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: partial_history
++2023-04-11 19:41:21,750 DEBUG   SenderThread:24583 [sender.py:send():303] send: exit
++2023-04-11 19:41:21,751 INFO    SenderThread:24583 [sender.py:send_exit():442] handling exit code: 255
++2023-04-11 19:41:21,751 INFO    SenderThread:24583 [sender.py:send_exit():444] handling runtime: 6695
++2023-04-11 19:41:21,754 INFO    SenderThread:24583 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
++2023-04-11 19:41:21,755 INFO    SenderThread:24583 [sender.py:send_exit():450] send defer
++2023-04-11 19:41:21,756 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: defer
++2023-04-11 19:41:21,756 INFO    HandlerThread:24583 [handler.py:handle_request_defer():162] handle defer: 0
++2023-04-11 19:41:21,756 DEBUG   SenderThread:24583 [sender.py:send_request():317] send_request: defer
++2023-04-11 19:41:21,757 INFO    SenderThread:24583 [sender.py:send_request_defer():459] handle sender defer: 0
++2023-04-11 19:41:21,757 INFO    SenderThread:24583 [sender.py:transition_state():463] send defer: 1
++2023-04-11 19:41:21,757 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: defer
++2023-04-11 19:41:21,758 INFO    HandlerThread:24583 [handler.py:handle_request_defer():162] handle defer: 1
++2023-04-11 19:41:21,758 INFO    HandlerThread:24583 [system_monitor.py:finish():160] Stopping system monitor
++2023-04-11 19:41:21,761 INFO    HandlerThread:24583 [interfaces.py:finish():175] Joined cpu
++2023-04-11 19:41:21,762 DEBUG   SystemMonitor:24583 [system_monitor.py:_start():137] Finished system metrics aggregation loop
++2023-04-11 19:41:21,762 INFO    HandlerThread:24583 [interfaces.py:finish():175] Joined disk
++2023-04-11 19:41:21,762 DEBUG   SystemMonitor:24583 [system_monitor.py:_start():141] Publishing last batch of metrics
++2023-04-11 19:41:21,767 INFO    HandlerThread:24583 [interfaces.py:finish():175] Joined gpu
++2023-04-11 19:41:21,767 INFO    HandlerThread:24583 [interfaces.py:finish():175] Joined memory
++2023-04-11 19:41:21,768 INFO    HandlerThread:24583 [interfaces.py:finish():175] Joined network
++2023-04-11 19:41:21,768 DEBUG   SenderThread:24583 [sender.py:send_request():317] send_request: defer
++2023-04-11 19:41:21,768 INFO    SenderThread:24583 [sender.py:send_request_defer():459] handle sender defer: 1
++2023-04-11 19:41:21,768 INFO    SenderThread:24583 [sender.py:transition_state():463] send defer: 2
++2023-04-11 19:41:21,769 DEBUG   SenderThread:24583 [sender.py:send():303] send: stats
++2023-04-11 19:41:21,769 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: defer
++2023-04-11 19:41:21,770 INFO    HandlerThread:24583 [handler.py:handle_request_defer():162] handle defer: 2
++2023-04-11 19:41:21,770 DEBUG   SenderThread:24583 [sender.py:send():303] send: history
++2023-04-11 19:41:21,770 DEBUG   SenderThread:24583 [sender.py:send():303] send: summary
++2023-04-11 19:41:21,773 INFO    SenderThread:24583 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
++2023-04-11 19:41:21,774 DEBUG   SenderThread:24583 [sender.py:send_request():317] send_request: defer
++2023-04-11 19:41:21,774 INFO    SenderThread:24583 [sender.py:send_request_defer():459] handle sender defer: 2
++2023-04-11 19:41:21,774 INFO    SenderThread:24583 [sender.py:transition_state():463] send defer: 3
++2023-04-11 19:41:21,775 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: defer
++2023-04-11 19:41:21,775 INFO    HandlerThread:24583 [handler.py:handle_request_defer():162] handle defer: 3
++2023-04-11 19:41:21,775 DEBUG   SenderThread:24583 [sender.py:send_request():317] send_request: defer
++2023-04-11 19:41:21,776 INFO    SenderThread:24583 [sender.py:send_request_defer():459] handle sender defer: 3
++2023-04-11 19:41:21,776 INFO    SenderThread:24583 [sender.py:transition_state():463] send defer: 4
++2023-04-11 19:41:21,776 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: defer
++2023-04-11 19:41:21,776 INFO    HandlerThread:24583 [handler.py:handle_request_defer():162] handle defer: 4
++2023-04-11 19:41:21,777 DEBUG   SenderThread:24583 [sender.py:send():303] send: summary
++2023-04-11 19:41:21,780 INFO    SenderThread:24583 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
++2023-04-11 19:41:21,781 DEBUG   SenderThread:24583 [sender.py:send_request():317] send_request: defer
++2023-04-11 19:41:21,781 INFO    SenderThread:24583 [sender.py:send_request_defer():459] handle sender defer: 4
++2023-04-11 19:41:21,781 INFO    SenderThread:24583 [sender.py:transition_state():463] send defer: 5
++2023-04-11 19:41:21,782 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: defer
++2023-04-11 19:41:21,782 INFO    HandlerThread:24583 [handler.py:handle_request_defer():162] handle defer: 5
++2023-04-11 19:41:21,782 DEBUG   SenderThread:24583 [sender.py:send_request():317] send_request: defer
++2023-04-11 19:41:21,782 INFO    SenderThread:24583 [sender.py:send_request_defer():459] handle sender defer: 5
++2023-04-11 19:41:21,783 INFO    SenderThread:24583 [sender.py:transition_state():463] send defer: 6
++2023-04-11 19:41:21,783 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: defer
++2023-04-11 19:41:21,783 INFO    HandlerThread:24583 [handler.py:handle_request_defer():162] handle defer: 6
++2023-04-11 19:41:21,783 DEBUG   SenderThread:24583 [sender.py:send_request():317] send_request: defer
++2023-04-11 19:41:21,784 INFO    SenderThread:24583 [sender.py:send_request_defer():459] handle sender defer: 6
++2023-04-11 19:41:22,750 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: poll_exit
++2023-04-11 19:41:22,767 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/wandb-summary.json
++2023-04-11 19:41:22,768 INFO    Thread-13 :24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:41:24,618 INFO    SenderThread:24583 [sender.py:transition_state():463] send defer: 7
++2023-04-11 19:41:24,619 DEBUG   SenderThread:24583 [sender.py:send_request():317] send_request: poll_exit
++2023-04-11 19:41:24,619 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: defer
++2023-04-11 19:41:24,620 INFO    HandlerThread:24583 [handler.py:handle_request_defer():162] handle defer: 7
++2023-04-11 19:41:24,620 DEBUG   SenderThread:24583 [sender.py:send_request():317] send_request: defer
++2023-04-11 19:41:24,620 INFO    SenderThread:24583 [sender.py:send_request_defer():459] handle sender defer: 7
++2023-04-11 19:41:24,621 INFO    SenderThread:24583 [dir_watcher.py:finish():362] shutting down directory watcher
++2023-04-11 19:41:24,787 INFO    SenderThread:24583 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:41:24,805 INFO    SenderThread:24583 [dir_watcher.py:finish():392] scan: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files
++2023-04-11 19:41:24,807 INFO    SenderThread:24583 [dir_watcher.py:finish():406] scan save: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/conda-environment.yaml conda-environment.yaml
++2023-04-11 19:41:24,813 INFO    SenderThread:24583 [dir_watcher.py:finish():406] scan save: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/config.yaml config.yaml
++2023-04-11 19:41:24,820 INFO    SenderThread:24583 [dir_watcher.py:finish():406] scan save: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/diff.patch diff.patch
++2023-04-11 19:41:24,821 INFO    SenderThread:24583 [dir_watcher.py:finish():406] scan save: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log output.log
++2023-04-11 19:41:24,827 INFO    SenderThread:24583 [dir_watcher.py:finish():406] scan save: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/requirements.txt requirements.txt
++2023-04-11 19:41:24,832 INFO    SenderThread:24583 [dir_watcher.py:finish():406] scan save: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/wandb-metadata.json wandb-metadata.json
++2023-04-11 19:41:24,832 INFO    SenderThread:24583 [dir_watcher.py:finish():406] scan save: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/wandb-summary.json wandb-summary.json
++2023-04-11 19:41:24,842 INFO    SenderThread:24583 [dir_watcher.py:finish():406] scan save: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/code/train_cls.py code/train_cls.py
++2023-04-11 19:41:24,842 INFO    SenderThread:24583 [sender.py:transition_state():463] send defer: 8
++2023-04-11 19:41:24,843 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: defer
++2023-04-11 19:41:24,843 INFO    HandlerThread:24583 [handler.py:handle_request_defer():162] handle defer: 8
++2023-04-11 19:41:24,843 DEBUG   SenderThread:24583 [sender.py:send_request():317] send_request: defer
++2023-04-11 19:41:24,843 INFO    SenderThread:24583 [sender.py:send_request_defer():459] handle sender defer: 8
++2023-04-11 19:41:24,844 INFO    SenderThread:24583 [file_pusher.py:finish():168] shutting down file pusher
++2023-04-11 19:41:25,420 INFO    Thread-20 :24583 [upload_job.py:push():143] Uploaded file /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/conda-environment.yaml
++2023-04-11 19:41:25,432 INFO    Thread-23 :24583 [upload_job.py:push():143] Uploaded file /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/wandb-summary.json
++2023-04-11 19:41:25,465 INFO    Thread-21 :24583 [upload_job.py:push():143] Uploaded file /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/config.yaml
++2023-04-11 19:41:25,771 INFO    Thread-22 :24583 [upload_job.py:push():143] Uploaded file /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/files/output.log
++2023-04-11 19:41:25,971 INFO    Thread-12 :24583 [sender.py:transition_state():463] send defer: 9
++2023-04-11 19:41:25,972 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: defer
++2023-04-11 19:41:25,972 INFO    HandlerThread:24583 [handler.py:handle_request_defer():162] handle defer: 9
++2023-04-11 19:41:25,973 DEBUG   SenderThread:24583 [sender.py:send_request():317] send_request: defer
++2023-04-11 19:41:25,973 INFO    SenderThread:24583 [sender.py:send_request_defer():459] handle sender defer: 9
++2023-04-11 19:41:25,973 INFO    SenderThread:24583 [file_pusher.py:join():173] waiting for file pusher
++2023-04-11 19:41:25,974 INFO    SenderThread:24583 [sender.py:transition_state():463] send defer: 10
++2023-04-11 19:41:25,974 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: defer
++2023-04-11 19:41:25,974 INFO    HandlerThread:24583 [handler.py:handle_request_defer():162] handle defer: 10
++2023-04-11 19:41:25,975 DEBUG   SenderThread:24583 [sender.py:send_request():317] send_request: defer
++2023-04-11 19:41:25,975 INFO    SenderThread:24583 [sender.py:send_request_defer():459] handle sender defer: 10
++2023-04-11 19:41:26,061 INFO    SenderThread:24583 [sender.py:transition_state():463] send defer: 11
++2023-04-11 19:41:26,061 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: defer
++2023-04-11 19:41:26,062 INFO    HandlerThread:24583 [handler.py:handle_request_defer():162] handle defer: 11
++2023-04-11 19:41:26,062 DEBUG   SenderThread:24583 [sender.py:send_request():317] send_request: defer
++2023-04-11 19:41:26,062 INFO    SenderThread:24583 [sender.py:send_request_defer():459] handle sender defer: 11
++2023-04-11 19:41:26,063 INFO    SenderThread:24583 [sender.py:transition_state():463] send defer: 12
++2023-04-11 19:41:26,063 DEBUG   SenderThread:24583 [sender.py:send():303] send: final
++2023-04-11 19:41:26,063 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: defer
++2023-04-11 19:41:26,063 DEBUG   SenderThread:24583 [sender.py:send():303] send: footer
++2023-04-11 19:41:26,064 INFO    HandlerThread:24583 [handler.py:handle_request_defer():162] handle defer: 12
++2023-04-11 19:41:26,064 DEBUG   SenderThread:24583 [sender.py:send_request():317] send_request: defer
++2023-04-11 19:41:26,065 INFO    SenderThread:24583 [sender.py:send_request_defer():459] handle sender defer: 12
++2023-04-11 19:41:26,066 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: poll_exit
++2023-04-11 19:41:26,066 DEBUG   SenderThread:24583 [sender.py:send_request():317] send_request: poll_exit
++2023-04-11 19:41:26,066 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: server_info
++2023-04-11 19:41:26,067 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: get_summary
++2023-04-11 19:41:26,067 DEBUG   SenderThread:24583 [sender.py:send_request():317] send_request: server_info
++2023-04-11 19:41:26,068 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: sampled_history
++2023-04-11 19:41:26,224 INFO    MainThread:24583 [wandb_run.py:_footer_history_summary_info():3408] rendering history
++2023-04-11 19:41:26,225 INFO    MainThread:24583 [wandb_run.py:_footer_history_summary_info():3440] rendering summary
++2023-04-11 19:41:26,225 INFO    MainThread:24583 [wandb_run.py:_footer_sync_info():3364] logging synced files
++2023-04-11 19:41:26,225 DEBUG   HandlerThread:24583 [handler.py:handle_request():139] handle_request: shutdown
++2023-04-11 19:41:26,226 INFO    HandlerThread:24583 [handler.py:finish():814] shutting down handler
++2023-04-11 19:41:27,063 INFO    WriterThread:24583 [datastore.py:close():279] close: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_174945-1bg5weza/run-1bg5weza.wandb
++2023-04-11 19:41:27,224 INFO    SenderThread:24583 [sender.py:finish():1331] shutting down sender
++2023-04-11 19:41:27,224 INFO    SenderThread:24583 [file_pusher.py:finish():168] shutting down file pusher
++2023-04-11 19:41:27,225 INFO    SenderThread:24583 [file_pusher.py:join():173] waiting for file pusher
++2023-04-11 19:41:27,228 INFO    MainThread:24583 [internal.py:handle_exit():77] Internal process exited
+diff --git a/wandb/run-20230411_174945-1bg5weza/logs/debug.log b/wandb/run-20230411_174945-1bg5weza/logs/debug.log
+index 9094cc2..38fb5d7 100644
+--- a/wandb/run-20230411_174945-1bg5weza/logs/debug.log
++++ b/wandb/run-20230411_174945-1bg5weza/logs/debug.log
+@@ -23,3 +23,4 @@ config: {'model': 'vn_transformer_cls', 'batch_size': 64, 'epoch': 2000, 'lr': 0
+ 2023-04-11 17:49:51,006 INFO    MainThread:24576 [wandb_run.py:_redirect():1909] Wrapping output streams.
+ 2023-04-11 17:49:51,006 INFO    MainThread:24576 [wandb_run.py:_redirect():1931] Redirects installed.
+ 2023-04-11 17:49:51,006 INFO    MainThread:24576 [wandb_init.py:init():765] run started, returning control to user process
++2023-04-11 19:41:27,228 WARNING MsgRouterThr:24576 [router.py:message_loop():77] message_loop has been closed
+diff --git a/wandb/run-20230411_174945-1bg5weza/run-1bg5weza.wandb b/wandb/run-20230411_174945-1bg5weza/run-1bg5weza.wandb
+index 90cbaad..852fdbf 100644
+Binary files a/wandb/run-20230411_174945-1bg5weza/run-1bg5weza.wandb and b/wandb/run-20230411_174945-1bg5weza/run-1bg5weza.wandb differ

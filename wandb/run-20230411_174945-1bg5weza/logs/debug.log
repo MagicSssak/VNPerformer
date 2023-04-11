@@ -23,3 +23,4 @@ config: {'model': 'vn_transformer_cls', 'batch_size': 64, 'epoch': 2000, 'lr': 0
 2023-04-11 17:49:51,006 INFO    MainThread:24576 [wandb_run.py:_redirect():1909] Wrapping output streams.
 2023-04-11 17:49:51,006 INFO    MainThread:24576 [wandb_run.py:_redirect():1931] Redirects installed.
 2023-04-11 17:49:51,006 INFO    MainThread:24576 [wandb_init.py:init():765] run started, returning control to user process
+2023-04-11 19:41:27,228 WARNING MsgRouterThr:24576 [router.py:message_loop():77] message_loop has been closed

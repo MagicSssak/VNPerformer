@@ -40,7 +40,7 @@ class get_model(nn.Module):
         B, C, _, N = x.shape
         
         for layers in self.transformer:
-            x = layers(x, x, x)  # B, C, 3, N
+            x = layers(x)  # B, C, 3, N
 
         inv = self.invariant(x)  # B 3 3 N
         # x --> B C 3 N inv --> B 3 3 N
