@@ -1,0 +1,208 @@
+{
+    "os": "Linux-5.15.90.1-microsoft-standard-WSL2-x86_64-with-glibc2.10",
+    "python": "3.8.5",
+    "heartbeatAt": "2023-04-11T21:17:06.089099",
+    "startedAt": "2023-04-11T21:17:05.485948",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--data_name",
+        "scan"
+    ],
+    "state": "running",
+    "program": "train_cls.py",
+    "codePath": "train_cls.py",
+    "git": {
+        "remote": "git@github.com:MagicSssak/VNPerformer.git",
+        "commit": "b1ac8c513053d4c0b30ec1d758572c15f47a7df9"
+    },
+    "email": "xf2219@columbia.edu",
+    "root": "/mnt/c/users/sssak/desktop/VNPerformer",
+    "host": "DESKTOP-QKV88AR",
+    "username": "sssak_feng",
+    "executable": "/home/sssak_feng/anaconda3/bin/python",
+    "cpu_count": 16,
+    "cpu_count_logical": 32,
+    "cpu_freq": {
+        "current": 3400.002999999998,
+        "min": 0.0,
+        "max": 0.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3400.003,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3400.003,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3400.003,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3400.003,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3400.003,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3400.003,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3400.003,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3400.003,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3400.003,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3400.003,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3400.003,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3400.003,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3400.003,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3400.003,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3400.003,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3400.003,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3400.003,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3400.003,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3400.003,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3400.003,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3400.003,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3400.003,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3400.003,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3400.003,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3400.003,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3400.003,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3400.003,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3400.003,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3400.003,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3400.003,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3400.003,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3400.003,
+            "min": 0.0,
+            "max": 0.0
+        }
+    ],
+    "disk": {
+        "total": 1006.853931427002,
+        "used": 41.21369171142578
+    },
+    "gpu": "NVIDIA GeForce RTX 3090",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 3090",
+            "memory_total": 25769803776
+        }
+    ],
+    "memory": {
+        "total": 31.30060577392578
+    }
+}

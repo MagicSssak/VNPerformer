@@ -1,0 +1,24 @@
+Load dataset ...
+test points sampled
+Start training...
+Epoch 1 (1/2000):
+
+
+
+
+100%|███████████████████████████████████████████████████████████████████████████████████| 37/37 [00:10<00:00,  3.51it/s]
+ 90%|███████████████████████████████████████████████████████████████████████████▌        | 9/10 [00:00<00:00,  9.62it/s]
+Train Epoch Accuracy: 0.11375432461500168
+100%|███████████████████████████████████████████████████████████████████████████████████| 10/10 [00:00<00:00, 10.41it/s]
+Traceback (most recent call last):
+  File "train_cls.py", line 290, in <module>
+    main(args)
+  File "train_cls.py", line 265, in main
+    torch.save(classifier.state_dict(), save_path)
+  File "/home/sssak_feng/anaconda3/lib/python3.8/site-packages/torch/serialization.py", line 422, in save
+    with _open_zipfile_writer(f) as opened_zipfile:
+  File "/home/sssak_feng/anaconda3/lib/python3.8/site-packages/torch/serialization.py", line 309, in _open_zipfile_writer
+    return container(name_or_buffer)
+  File "/home/sssak_feng/anaconda3/lib/python3.8/site-packages/torch/serialization.py", line 287, in __init__
+    super(_open_zipfile_writer_file, self).__init__(torch._C.PyTorchFileWriter(str(name)))
+RuntimeError: Parent directory saved_models does not exist.

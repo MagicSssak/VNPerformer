@@ -1,0 +1,25 @@
+Load dataset ...
+test points sampled
+Start training...
+Epoch 1 (1/2000):
+
+
+
+
+
+
+
+
+
+
+
+100%|███████████████████████████████████████████████████████████████████████████████████| 73/73 [00:25<00:00,  2.91it/s]
+ 16%|█████████████▎                                                                      | 3/19 [00:00<00:02,  7.13it/s]
+Train Epoch Accuracy: 0.1358131468296051
+100%|███████████████████████████████████████████████████████████████████████████████████| 19/19 [00:02<00:00,  9.03it/s]
+Traceback (most recent call last):
+  File "train_cls.py", line 305, in <module>
+    main(args)
+  File "train_cls.py", line 272, in main
+    inf_time = time - test_start
+TypeError: unsupported operand type(s) for -: 'module' and 'float'

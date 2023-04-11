@@ -1,0 +1,55 @@
+Load dataset ...
+test points sampled
+Start training...
+Epoch 1 (1/2000):
+
+
+
+
+100%|███████████████████████████████████████████████████████████████████████████████████| 37/37 [00:10<00:00,  3.38it/s]
+ 50%|██████████████████████████████████████████                                          | 5/10 [00:00<00:00,  8.88it/s]
+Train Epoch Accuracy: 0.12326989322900772
+Train Epoch Loss: 2.0303253547565356
+TEST (inference) time: 0.09002208709716797
+TEST (inference) time: 0.09046816825866699
+TEST (inference) time: 0.0908365249633789
+TEST (inference) time: 0.09090089797973633
+TEST (inference) time: 0.09115147590637207
+TEST (inference) time: 0.09130287170410156
+TEST (inference) time: 0.09076094627380371
+TEST (inference) time: 0.09105467796325684
+TEST (inference) time: 0.09236860275268555
+TEST (inference) time: 0.007467031478881836
+Test Instance Accuracy: 0.08996539562940598, Class Accuracy: 0.08341840591217621
+Best Instance Accuracy: 0.08996539562940598, Class Accuracy: 0.08341840591217621
+100%|███████████████████████████████████████████████████████████████████████████████████| 10/10 [00:00<00:00, 10.19it/s]
+
+
+
+
+100%|███████████████████████████████████████████████████████████████████████████████████| 37/37 [00:10<00:00,  3.47it/s]
+ 70%|██████████████████████████████████████████████████████████▊                         | 7/10 [00:00<00:00,  9.47it/s]
+Train Epoch Accuracy: 0.181228369474411
+Train Epoch Loss: 1.342264926111376
+TEST (inference) time: 0.09065866470336914
+TEST (inference) time: 0.09055280685424805
+TEST (inference) time: 0.09165239334106445
+TEST (inference) time: 0.09122538566589355
+TEST (inference) time: 0.09188437461853027
+TEST (inference) time: 0.09091043472290039
+TEST (inference) time: 0.09107065200805664
+TEST (inference) time: 0.09149694442749023
+TEST (inference) time: 0.09152460098266602
+TEST (inference) time: 0.006487607955932617
+Test Instance Accuracy: 0.193771630525589, Class Accuracy: 0.12988078776384454
+Best Instance Accuracy: 0.193771630525589, Class Accuracy: 0.12988078776384454
+100%|███████████████████████████████████████████████████████████████████████████████████| 10/10 [00:00<00:00, 10.28it/s]
+
+
+ 65%|█████████████████████████████████████████████████████▊                             | 24/37 [00:07<00:03,  3.34it/s]
+Traceback (most recent call last):
+  File "train_cls.py", line 302, in <module>
+    main(args)
+  File "train_cls.py", line 237, in main
+    points, target = points.cuda(), target.cuda()
+KeyboardInterrupt

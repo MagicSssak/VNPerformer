@@ -1,0 +1,1 @@
+{"lr": 0.0009582002476306668, "_timestamp": 1681247863.5503843, "Train Batch Loss": 1.3010799884796143, "_runtime": 37.999643325805664, "_step": 5, "Train Epoch Loss": 1.342264926111376, "Train Acc": 0.181228369474411, "Test Acc": 0.193771630525589, "Test Best Acc": 0.193771630525589, "Test Best Class Acc": 0.12988078776384454, "_wandb": {"runtime": 37}}

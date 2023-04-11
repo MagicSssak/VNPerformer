@@ -1,0 +1,150 @@
+diff --git a/models/TransformerEncoder.py b/models/TransformerEncoder.py
+index 31a14cd..d4f4a34 100644
+--- a/models/TransformerEncoder.py
++++ b/models/TransformerEncoder.py
+@@ -2,6 +2,7 @@ from models.vn_layers import *
+ import torch
+ import torch.nn as nn
+ from math import *
++from models.kernelization import *
+ 
+ 
+ class TransformerEncoder(nn.Module):
+@@ -25,6 +26,16 @@ class TransformerEncoder(nn.Module):
+         self.wk = VNLinear(self.num_features, self.channels_per_head * self.heads)
+         self.wv = VNLinear(self.num_features, self.channels_per_head * self.heads)
+ 
++        self.kernel = args.kernel
++        self.antithetic = args.antithetic
++        self.num_random = args.num_random
++        self.kernel_channel = self.channels_per_head * 3
++        if self.kernel:
++            if self.antithetic:
++                w = gaussian_orthogonal_random_matrix(nb_rows=self.num_random // 2, nb_columns=self.kernel_channel)
++                self.w = torch.cat([w, -w], dim=0).cuda()
++            else:
++                self.w = gaussian_orthogonal_random_matrix(nb_rows=self.num_random, nb_columns=self.kernel_channel)
+ 
+ 
+     def forward(self, q, k, v):
+@@ -54,17 +65,33 @@ class TransformerEncoder(nn.Module):
+ 
+         # separated attention
+         # B, H, N, N
+-        div = 1 / sqrt(q.shape[-1])
+-        attn = torch.einsum('...nc, ...mc->...nm', q, k)
+-        attn *= div
+-        attn = attn.softmax(-1)
++        if self.kernel:
++            if self.training:
++                if self.antithetic:
++                    w = gaussian_orthogonal_random_matrix(nb_rows=self.num_random // 2, nb_columns=self.kernel_channel)
++                    w = torch.cat([w, -w], dim=0).cuda()
++                else:
++                    w = gaussian_orthogonal_random_matrix(nb_rows=self.num_random, nb_columns=self.kernel_channel)
++
++            else:
++                w = self.w
++
++            k = softmax_kernel(data=k, projection_matrix=w, is_query=False)
++            q = softmax_kernel(data=q, projection_matrix=w, is_query=True)
++            out = compute_attn(q, k, v).contiguous()
++
++        else:
++            div = 1 / sqrt(q.shape[-1])
++            attn = torch.einsum('...nc, ...mc->...nm', q, k)
++            attn *= div
++            attn = attn.softmax(-1)
++
++            # B, H, N, C//H, 3 --> B, C//H * H, 3, N
++            out = torch.einsum('...nm, ...mcp->...ncp', attn, v)  # B, H, N, C//H, 3
+ 
+-        # B, H, N, C//H, 3 --> B, C//H * H, 3, N
+-        out = torch.einsum('...nm, ...mcp->...ncp', attn, v)  # B, H, N, C//H, 3
+         out = out.permute(0, -1, 2, 3, 1).contiguous()
+         out = out.view(B, -1, N, self.channels_per_head*self.heads)  # B, 3, N, C//H * H
+         out = out.permute(0, -1, 1, 2)
+-        #out = out.transpose(1, 2).transpose(-1, 1)  # B, C//H * H, 3, N
+         out = self.out_linear(out)
+ 
+         # add and norm
+diff --git a/train_cls.py b/train_cls.py
+index 5f0778a..ac0ef2a 100644
+--- a/train_cls.py
++++ b/train_cls.py
+@@ -15,6 +15,7 @@ import provider
+ import warnings
+ from models.vn_transformer_cls import get_model
+ from tqdm import tqdm
++import time
+ 
+ warnings.simplefilter(action='ignore', category=FutureWarning)
+ 
+@@ -50,10 +51,17 @@ def parse_args():
+     parser.add_argument('--num_class', type=int, default=40,
+                         help='Point Number [default: 1024]')
+ 
++    parser.add_argument('--kernel', action='store_true', default=False,
++                        help='Whether to use performer')
++    parser.add_argument('--antithetic', action='store_true', default=False,
++                        help='Whether to use antithetic sampling')
++    parser.add_argument('--num_random', type=int, default=20,
++                        help='Number of random features')
++
+ 
+     parser.add_argument('--data_name', type=str, default='ModelNet40',
+                         help='Point Number [default: 1024]')
+-    parser.add_argument('--save_dir', type=str, default='saved_models',
++    parser.add_argument('--save_dir', type=str, default='/mnt/c/users/sssak/desktop/models/VNPerformer',
+                         help='Experiment root [default: saved_models]')
+     parser.add_argument('--restore', type=str, default=None,
+                         help='Model path to restore [default: None]')
+@@ -96,6 +104,7 @@ def test(model, loader, criterion, num_class=40):
+     num_correct = 0
+     count = 0
+     class_acc = np.zeros((num_class,3))
++
+     for j, data in tqdm(enumerate(loader), total=len(loader)):
+         points, target = data
+         
+@@ -162,7 +171,12 @@ def main(args):
+     classifier = get_model(args, num_class, normal_channel=args.normal)
+     # criterion = MODEL.get_loss().cuda()
+     criterion = torch.nn.CrossEntropyLoss(label_smoothing=.2).cuda()
+-    model_name = f'{args.data_name}_{args.name}_{args.num_layers}_{args.num_heads}_{args.num_point}_{args.batch_size}_{args.num_features}_{args.hidden}'
++
++
++    if args.kernel:
++        model_name = f'Performer_{args.data_name}_{args.name}_{args.num_layers}_{args.num_heads}_{args.num_point}_{args.batch_size}_{args.num_features}_{args.hidden}'
++    else:
++        model_name = f'Transformer_{args.data_name}_{args.name}_{args.num_layers}_{args.num_heads}_{args.num_point}_{args.batch_size}_{args.num_features}_{args.hidden}'
+     save_path = os.path.join(args.save_dir, model_name + '.pt')
+ 
+     if args.restore is not None:
+@@ -252,8 +266,12 @@ def main(args):
+ 
+         with torch.no_grad():
+             classifier.eval()
+-            test_acc, class_acc = test(classifier, testDataLoader, criterion, num_class)
+ 
++            test_start = time.time()
++            test_acc, class_acc = test(classifier, testDataLoader, criterion, num_class)
++            inf_time = time.time() - test_start
++            print(f'TEST (inference) time: {inf_time}s')
++            wandb.log({'Inference Time': inf_time}, commit=False)
+             if test_acc >= best_test_acc:
+                 torch.save(classifier.state_dict(), save_path)
+                 best_test_acc = test_acc
+@@ -276,7 +294,11 @@ if __name__ == '__main__':
+     args.num_class = 40 if args.data_name == "ModelNet40" else 15
+ 
+     # logg to wandb
+-    name = f'{args.data_name}_{args.name}_{args.num_layers}_{args.num_heads}_{args.num_point}_{args.batch_size}_{args.num_features}_{args.hidden}'
++    if args.kernel:
++        k = 'Performer_'
++    else:
++        k = 'Transformer_'
++    name = k + f'{args.data_name}_{args.name}_{args.num_layers}_{args.num_heads}_{args.num_point}_{args.batch_size}_{args.num_features}_{args.hidden}'
+     project = 'ModelNet40_VN' if args.data_name == 'ModelNet40' else 'ScanObjectNN_VN'
+     wandb.init(project=project, name=name, config=args, entity='orcs4529')
+     wandb.save('*.txt')

@@ -1,0 +1,666 @@
+2023-04-11 17:22:56,238 INFO    StreamThr :14875 [internal.py:wandb_internal():87] W&B internal server running at pid: 14875, started at: 2023-04-11 17:22:56.236818
+2023-04-11 17:22:56,240 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: status
+2023-04-11 17:22:56,242 DEBUG   SenderThread:14875 [sender.py:send_request():317] send_request: status
+2023-04-11 17:22:56,246 DEBUG   SenderThread:14875 [sender.py:send():303] send: header
+2023-04-11 17:22:56,246 INFO    WriterThread:14875 [datastore.py:open_for_write():75] open: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/run-1lqgfvrd.wandb
+2023-04-11 17:22:56,343 DEBUG   SenderThread:14875 [sender.py:send():303] send: run
+2023-04-11 17:22:56,535 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: check_version
+2023-04-11 17:22:56,535 INFO    SenderThread:14875 [dir_watcher.py:__init__():216] watching files in: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files
+2023-04-11 17:22:56,536 INFO    SenderThread:14875 [sender.py:_start_run_threads():928] run started: 1lqgfvrd with start time 1681248176.241909
+2023-04-11 17:22:56,536 DEBUG   SenderThread:14875 [sender.py:send():303] send: summary
+2023-04-11 17:22:56,539 INFO    SenderThread:14875 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-11 17:22:56,541 DEBUG   SenderThread:14875 [sender.py:send_request():317] send_request: check_version
+2023-04-11 17:22:56,627 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: run_start
+2023-04-11 17:22:56,654 DEBUG   HandlerThread:14875 [system_info.py:__init__():31] System info init
+2023-04-11 17:22:56,654 DEBUG   HandlerThread:14875 [system_info.py:__init__():46] System info init done
+2023-04-11 17:22:56,655 INFO    HandlerThread:14875 [system_monitor.py:start():150] Starting system monitor
+2023-04-11 17:22:56,655 INFO    SystemMonitor:14875 [system_monitor.py:_start():116] Starting system asset monitoring threads
+2023-04-11 17:22:56,655 INFO    HandlerThread:14875 [system_monitor.py:probe():171] Collecting system info
+2023-04-11 17:22:56,656 INFO    SystemMonitor:14875 [interfaces.py:start():168] Started cpu
+2023-04-11 17:22:56,657 INFO    SystemMonitor:14875 [interfaces.py:start():168] Started disk
+2023-04-11 17:22:56,657 INFO    SystemMonitor:14875 [interfaces.py:start():168] Started gpu
+2023-04-11 17:22:56,658 INFO    SystemMonitor:14875 [interfaces.py:start():168] Started memory
+2023-04-11 17:22:56,659 INFO    SystemMonitor:14875 [interfaces.py:start():168] Started network
+2023-04-11 17:22:56,667 DEBUG   HandlerThread:14875 [system_info.py:probe():195] Probing system
+2023-04-11 17:22:56,773 DEBUG   HandlerThread:14875 [system_info.py:_probe_git():180] Probing git
+2023-04-11 17:22:56,865 DEBUG   HandlerThread:14875 [system_info.py:_probe_git():188] Probing git done
+2023-04-11 17:22:56,865 DEBUG   HandlerThread:14875 [system_info.py:probe():241] Probing system done
+2023-04-11 17:22:56,866 DEBUG   HandlerThread:14875 [system_monitor.py:probe():180] {'os': 'Linux-5.15.90.1-microsoft-standard-WSL2-x86_64-with-glibc2.10', 'python': '3.8.5', 'heartbeatAt': '2023-04-11T21:22:56.668169', 'startedAt': '2023-04-11T21:22:56.176359', 'docker': None, 'cuda': None, 'args': ('--data_name', 'scan', '--batch_size', '32', '--num_point', '512'), 'state': 'running', 'program': 'train_cls.py', 'codePath': 'train_cls.py', 'git': {'remote': 'git@github.com:MagicSssak/VNPerformer.git', 'commit': 'b1ac8c513053d4c0b30ec1d758572c15f47a7df9'}, 'email': 'xf2219@columbia.edu', 'root': '/mnt/c/users/sssak/desktop/VNPerformer', 'host': 'DESKTOP-QKV88AR', 'username': 'sssak_feng', 'executable': '/home/sssak_feng/anaconda3/bin/python', 'cpu_count': 16, 'cpu_count_logical': 32, 'cpu_freq': {'current': 3400.002999999998, 'min': 0.0, 'max': 0.0}, 'cpu_freq_per_core': [{'current': 3400.003, 'min': 0.0, 'max': 0.0}, {'current': 3400.003, 'min': 0.0, 'max': 0.0}, {'current': 3400.003, 'min': 0.0, 'max': 0.0}, {'current': 3400.003, 'min': 0.0, 'max': 0.0}, {'current': 3400.003, 'min': 0.0, 'max': 0.0}, {'current': 3400.003, 'min': 0.0, 'max': 0.0}, {'current': 3400.003, 'min': 0.0, 'max': 0.0}, {'current': 3400.003, 'min': 0.0, 'max': 0.0}, {'current': 3400.003, 'min': 0.0, 'max': 0.0}, {'current': 3400.003, 'min': 0.0, 'max': 0.0}, {'current': 3400.003, 'min': 0.0, 'max': 0.0}, {'current': 3400.003, 'min': 0.0, 'max': 0.0}, {'current': 3400.003, 'min': 0.0, 'max': 0.0}, {'current': 3400.003, 'min': 0.0, 'max': 0.0}, {'current': 3400.003, 'min': 0.0, 'max': 0.0}, {'current': 3400.003, 'min': 0.0, 'max': 0.0}, {'current': 3400.003, 'min': 0.0, 'max': 0.0}, {'current': 3400.003, 'min': 0.0, 'max': 0.0}, {'current': 3400.003, 'min': 0.0, 'max': 0.0}, {'current': 3400.003, 'min': 0.0, 'max': 0.0}, {'current': 3400.003, 'min': 0.0, 'max': 0.0}, {'current': 3400.003, 'min': 0.0, 'max': 0.0}, {'current': 3400.003, 'min': 0.0, 'max': 0.0}, {'current': 3400.003, 'min': 0.0, 'max': 0.0}, {'current': 3400.003, 'min': 0.0, 'max': 0.0}, {'current': 3400.003, 'min': 0.0, 'max': 0.0}, {'current': 3400.003, 'min': 0.0, 'max': 0.0}, {'current': 3400.003, 'min': 0.0, 'max': 0.0}, {'current': 3400.003, 'min': 0.0, 'max': 0.0}, {'current': 3400.003, 'min': 0.0, 'max': 0.0}, {'current': 3400.003, 'min': 0.0, 'max': 0.0}, {'current': 3400.003, 'min': 0.0, 'max': 0.0}], 'disk': {'total': 1006.853931427002, 'used': 41.21369171142578}, 'gpu': 'NVIDIA GeForce RTX 3090', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3090', 'memory_total': 25769803776}], 'memory': {'total': 31.30060577392578}}
+2023-04-11 17:22:56,866 INFO    HandlerThread:14875 [system_monitor.py:probe():181] Finished collecting system info
+2023-04-11 17:22:56,866 INFO    HandlerThread:14875 [system_monitor.py:probe():184] Publishing system info
+2023-04-11 17:22:56,866 DEBUG   HandlerThread:14875 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-04-11 17:22:56,869 DEBUG   HandlerThread:14875 [system_info.py:_save_pip():67] Saving pip packages done
+2023-04-11 17:22:56,870 DEBUG   HandlerThread:14875 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-04-11 17:22:57,543 INFO    Thread-13 :14875 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/conda-environment.yaml
+2023-04-11 17:22:57,544 INFO    Thread-13 :14875 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/requirements.txt
+2023-04-11 17:22:57,545 INFO    Thread-13 :14875 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/wandb-summary.json
+2023-04-11 17:23:00,557 INFO    Thread-13 :14875 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/conda-environment.yaml
+2023-04-11 17:23:00,597 DEBUG   HandlerThread:14875 [system_info.py:_save_conda():86] Saving conda packages done
+2023-04-11 17:23:00,597 DEBUG   HandlerThread:14875 [system_info.py:_save_code():89] Saving code
+2023-04-11 17:23:00,623 DEBUG   HandlerThread:14875 [system_info.py:_save_code():110] Saving code done
+2023-04-11 17:23:00,624 DEBUG   HandlerThread:14875 [system_info.py:_save_patches():127] Saving git patches
+2023-04-11 17:23:01,568 INFO    Thread-13 :14875 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/diff.patch
+2023-04-11 17:23:01,568 INFO    Thread-13 :14875 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/code/train_cls.py
+2023-04-11 17:23:01,570 INFO    Thread-13 :14875 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/code
+2023-04-11 17:23:02,344 DEBUG   HandlerThread:14875 [git.py:get_upstream_fork_point():168] git is in a detached head state
+2023-04-11 17:23:02,344 DEBUG   HandlerThread:14875 [system_info.py:_save_patches():169] Saving git patches done
+2023-04-11 17:23:02,348 INFO    HandlerThread:14875 [system_monitor.py:probe():186] Finished publishing system info
+2023-04-11 17:23:02,370 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: stop_status
+2023-04-11 17:23:02,371 DEBUG   SenderThread:14875 [sender.py:send_request():317] send_request: stop_status
+2023-04-11 17:23:02,442 DEBUG   SenderThread:14875 [sender.py:send():303] send: telemetry
+2023-04-11 17:23:02,443 DEBUG   SenderThread:14875 [sender.py:send():303] send: telemetry
+2023-04-11 17:23:02,443 DEBUG   SenderThread:14875 [sender.py:send():303] send: files
+2023-04-11 17:23:02,444 INFO    SenderThread:14875 [sender.py:_save_file():1171] saving file *.txt with policy live
+2023-04-11 17:23:02,462 DEBUG   SenderThread:14875 [sender.py:send():303] send: files
+2023-04-11 17:23:02,462 INFO    SenderThread:14875 [sender.py:_save_file():1171] saving file wandb-metadata.json with policy now
+2023-04-11 17:23:02,467 INFO    SenderThread:14875 [sender.py:_save_file():1171] saving file code/train_cls.py with policy now
+2023-04-11 17:23:02,478 INFO    SenderThread:14875 [sender.py:_save_file():1171] saving file diff.patch with policy now
+2023-04-11 17:23:02,581 INFO    Thread-13 :14875 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/diff.patch
+2023-04-11 17:23:02,582 INFO    Thread-13 :14875 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/wandb-metadata.json
+2023-04-11 17:23:02,583 INFO    Thread-13 :14875 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/output.log
+2023-04-11 17:23:02,814 INFO    Thread-16 :14875 [upload_job.py:push():143] Uploaded file /tmp/tmpxjafhb_owandb/1qnfzrk7-requirements.txt
+2023-04-11 17:23:02,823 INFO    Thread-17 :14875 [upload_job.py:push():143] Uploaded file /tmp/tmpxjafhb_owandb/3rb8a5ea-wandb-metadata.json
+2023-04-11 17:23:02,851 INFO    Thread-19 :14875 [upload_job.py:push():143] Uploaded file /tmp/tmpxjafhb_owandb/2qac4meb-diff.patch
+2023-04-11 17:23:02,870 INFO    Thread-18 :14875 [upload_job.py:push():143] Uploaded file /tmp/tmpxjafhb_owandb/15f2pjs0-code/train_cls.py
+2023-04-11 17:23:03,335 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:03,684 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:03,685 DEBUG   SenderThread:14875 [sender.py:send():303] send: history
+2023-04-11 17:23:03,685 DEBUG   SenderThread:14875 [sender.py:send():303] send: summary
+2023-04-11 17:23:03,689 INFO    SenderThread:14875 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-11 17:23:03,906 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:04,265 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:04,604 INFO    Thread-13 :14875 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/output.log
+2023-04-11 17:23:04,604 INFO    Thread-13 :14875 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/wandb-summary.json
+2023-04-11 17:23:04,610 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:04,953 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:05,293 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:05,616 INFO    Thread-13 :14875 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/output.log
+2023-04-11 17:23:05,635 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:05,976 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:06,318 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:06,659 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:07,002 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:07,348 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:07,639 INFO    Thread-13 :14875 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/output.log
+2023-04-11 17:23:07,690 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:08,038 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:08,380 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:08,721 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:09,065 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:09,406 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:09,664 INFO    Thread-13 :14875 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/output.log
+2023-04-11 17:23:09,748 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:10,090 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:10,433 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:10,781 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:11,138 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:11,493 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:11,690 INFO    Thread-13 :14875 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/output.log
+2023-04-11 17:23:11,839 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:12,184 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:12,303 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:12,303 DEBUG   SenderThread:14875 [sender.py:send():303] send: history
+2023-04-11 17:23:12,304 DEBUG   SenderThread:14875 [sender.py:send():303] send: summary
+2023-04-11 17:23:12,307 INFO    SenderThread:14875 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-11 17:23:12,527 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:12,703 INFO    Thread-13 :14875 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/wandb-summary.json
+2023-04-11 17:23:12,883 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:13,239 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:13,595 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:13,718 INFO    Thread-13 :14875 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/output.log
+2023-04-11 17:23:13,945 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:14,288 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:14,648 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:14,997 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:15,343 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:15,684 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:15,742 INFO    Thread-13 :14875 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/output.log
+2023-04-11 17:23:16,028 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:16,372 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:16,720 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:17,064 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:17,413 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:17,443 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: stop_status
+2023-04-11 17:23:17,444 DEBUG   SenderThread:14875 [sender.py:send_request():317] send_request: stop_status
+2023-04-11 17:23:17,757 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:17,766 INFO    Thread-13 :14875 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/output.log
+2023-04-11 17:23:18,104 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:18,450 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:18,790 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:19,134 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:19,475 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:19,789 INFO    Thread-13 :14875 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/output.log
+2023-04-11 17:23:19,814 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:20,155 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:20,495 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:20,836 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:20,951 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:20,952 DEBUG   SenderThread:14875 [sender.py:send():303] send: history
+2023-04-11 17:23:20,952 DEBUG   SenderThread:14875 [sender.py:send():303] send: summary
+2023-04-11 17:23:20,955 INFO    SenderThread:14875 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-11 17:23:21,175 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:21,518 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:21,812 INFO    Thread-13 :14875 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/output.log
+2023-04-11 17:23:21,813 INFO    Thread-13 :14875 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/wandb-summary.json
+2023-04-11 17:23:21,863 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:22,206 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:22,545 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:22,887 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:23,226 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:23,568 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:23,836 INFO    Thread-13 :14875 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/output.log
+2023-04-11 17:23:23,908 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:24,249 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:24,589 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:24,930 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:25,275 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:25,619 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:25,861 INFO    Thread-13 :14875 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/output.log
+2023-04-11 17:23:25,962 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:26,308 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:26,649 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:26,873 INFO    Thread-13 :14875 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/config.yaml
+2023-04-11 17:23:26,995 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:27,338 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:27,683 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:27,884 INFO    Thread-13 :14875 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/output.log
+2023-04-11 17:23:28,027 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:28,370 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:28,419 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:28,419 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:29,909 INFO    Thread-13 :14875 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/output.log
+2023-04-11 17:23:30,550 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:30,619 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:30,619 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:30,620 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:30,690 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:30,808 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:30,809 DEBUG   SenderThread:14875 [sender.py:send():303] send: history
+2023-04-11 17:23:30,810 DEBUG   SenderThread:14875 [sender.py:send():303] send: summary
+2023-04-11 17:23:30,812 INFO    SenderThread:14875 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-11 17:23:30,920 INFO    Thread-13 :14875 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/output.log
+2023-04-11 17:23:30,921 INFO    Thread-13 :14875 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/wandb-summary.json
+2023-04-11 17:23:31,035 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:31,379 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:31,724 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:31,931 INFO    Thread-13 :14875 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/output.log
+2023-04-11 17:23:32,069 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:32,412 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:32,515 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: stop_status
+2023-04-11 17:23:32,515 DEBUG   SenderThread:14875 [sender.py:send_request():317] send_request: stop_status
+2023-04-11 17:23:32,756 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:32,942 INFO    Thread-13 :14875 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/output.log
+2023-04-11 17:23:33,099 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:33,441 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:33,781 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:33,953 INFO    Thread-13 :14875 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/output.log
+2023-04-11 17:23:34,123 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:34,467 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:34,811 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:35,152 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:35,495 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:35,838 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:35,975 INFO    Thread-13 :14875 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/output.log
+2023-04-11 17:23:36,181 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:36,521 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:36,862 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:37,202 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:37,544 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:37,883 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:37,998 INFO    Thread-13 :14875 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/output.log
+2023-04-11 17:23:38,225 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:38,564 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:38,907 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:39,248 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:39,366 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:39,367 DEBUG   SenderThread:14875 [sender.py:send():303] send: history
+2023-04-11 17:23:39,367 DEBUG   SenderThread:14875 [sender.py:send():303] send: summary
+2023-04-11 17:23:39,370 INFO    SenderThread:14875 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-11 17:23:39,589 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:39,929 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:40,020 INFO    Thread-13 :14875 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/output.log
+2023-04-11 17:23:40,021 INFO    Thread-13 :14875 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/wandb-summary.json
+2023-04-11 17:23:40,271 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:40,610 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:40,952 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:41,292 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:41,634 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:41,973 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:42,041 INFO    Thread-13 :14875 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/output.log
+2023-04-11 17:23:42,315 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:42,654 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:42,997 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:43,337 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:43,679 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:44,020 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:44,062 INFO    Thread-13 :14875 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/output.log
+2023-04-11 17:23:44,362 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:44,702 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:45,044 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:45,385 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:45,726 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:46,066 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:46,083 INFO    Thread-13 :14875 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/output.log
+2023-04-11 17:23:46,408 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:46,748 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:47,091 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:47,431 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:47,599 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: stop_status
+2023-04-11 17:23:47,599 DEBUG   SenderThread:14875 [sender.py:send_request():317] send_request: stop_status
+2023-04-11 17:23:47,773 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:47,888 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:47,888 DEBUG   SenderThread:14875 [sender.py:send():303] send: history
+2023-04-11 17:23:47,889 DEBUG   SenderThread:14875 [sender.py:send():303] send: summary
+2023-04-11 17:23:47,891 INFO    SenderThread:14875 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-11 17:23:48,106 INFO    Thread-13 :14875 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/output.log
+2023-04-11 17:23:48,106 INFO    Thread-13 :14875 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/wandb-summary.json
+2023-04-11 17:23:48,112 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:48,455 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:48,794 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:49,138 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:49,477 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:49,819 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:50,127 INFO    Thread-13 :14875 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/output.log
+2023-04-11 17:23:50,160 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:50,501 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:50,841 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:51,184 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:51,524 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:51,866 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:52,148 INFO    Thread-13 :14875 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/output.log
+2023-04-11 17:23:52,206 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:52,548 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:52,888 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:53,230 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:53,570 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:53,914 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:54,170 INFO    Thread-13 :14875 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/output.log
+2023-04-11 17:23:54,255 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:54,597 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:54,937 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:55,280 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:55,330 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:55,331 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:56,193 INFO    Thread-13 :14875 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/output.log
+2023-04-11 17:23:56,659 DEBUG   SystemMonitor:14875 [system_monitor.py:_start():130] Starting system metrics aggregation loop
+2023-04-11 17:23:56,661 DEBUG   SenderThread:14875 [sender.py:send():303] send: stats
+2023-04-11 17:23:57,206 INFO    Thread-13 :14875 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/output.log
+2023-04-11 17:23:57,456 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:57,525 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:57,525 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:57,526 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:57,598 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:57,717 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:57,718 DEBUG   SenderThread:14875 [sender.py:send():303] send: history
+2023-04-11 17:23:57,718 DEBUG   SenderThread:14875 [sender.py:send():303] send: summary
+2023-04-11 17:23:57,721 INFO    SenderThread:14875 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-11 17:23:57,941 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:58,218 INFO    Thread-13 :14875 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/output.log
+2023-04-11 17:23:58,218 INFO    Thread-13 :14875 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/wandb-summary.json
+2023-04-11 17:23:58,282 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:58,624 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:58,967 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:59,229 INFO    Thread-13 :14875 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/output.log
+2023-04-11 17:23:59,306 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:59,648 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:23:59,988 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:00,241 INFO    Thread-13 :14875 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/output.log
+2023-04-11 17:24:00,330 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:00,670 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:01,014 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:01,353 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:01,695 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:02,035 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:02,265 INFO    Thread-13 :14875 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/output.log
+2023-04-11 17:24:02,377 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:02,689 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: stop_status
+2023-04-11 17:24:02,690 DEBUG   SenderThread:14875 [sender.py:send_request():317] send_request: stop_status
+2023-04-11 17:24:02,717 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:03,060 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:03,399 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:03,741 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:04,083 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:04,288 INFO    Thread-13 :14875 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/output.log
+2023-04-11 17:24:04,425 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:04,766 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:05,109 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:05,448 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:05,790 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:06,131 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:06,250 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:06,251 DEBUG   SenderThread:14875 [sender.py:send():303] send: history
+2023-04-11 17:24:06,251 DEBUG   SenderThread:14875 [sender.py:send():303] send: summary
+2023-04-11 17:24:06,253 INFO    SenderThread:14875 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-11 17:24:06,311 INFO    Thread-13 :14875 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/output.log
+2023-04-11 17:24:06,311 INFO    Thread-13 :14875 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/wandb-summary.json
+2023-04-11 17:24:06,473 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:06,813 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:07,156 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:07,497 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:07,839 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:08,179 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:08,334 INFO    Thread-13 :14875 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/output.log
+2023-04-11 17:24:08,521 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:08,861 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:09,205 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:09,545 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:09,888 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:10,228 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:10,357 INFO    Thread-13 :14875 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/output.log
+2023-04-11 17:24:10,570 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:10,910 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:11,253 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:11,593 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:11,935 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:12,275 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:12,381 INFO    Thread-13 :14875 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/output.log
+2023-04-11 17:24:12,618 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:12,958 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:13,300 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:13,641 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:13,985 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:14,326 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:14,402 INFO    Thread-13 :14875 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/output.log
+2023-04-11 17:24:14,668 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:14,784 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:14,784 DEBUG   SenderThread:14875 [sender.py:send():303] send: history
+2023-04-11 17:24:14,785 DEBUG   SenderThread:14875 [sender.py:send():303] send: summary
+2023-04-11 17:24:14,787 INFO    SenderThread:14875 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-11 17:24:15,008 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:15,350 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:15,413 INFO    Thread-13 :14875 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/wandb-summary.json
+2023-04-11 17:24:15,691 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:16,033 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:16,373 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:16,424 INFO    Thread-13 :14875 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/output.log
+2023-04-11 17:24:16,716 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:17,057 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:17,399 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:17,435 INFO    Thread-13 :14875 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/output.log
+2023-04-11 17:24:17,740 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:17,795 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: stop_status
+2023-04-11 17:24:17,795 DEBUG   SenderThread:14875 [sender.py:send_request():317] send_request: stop_status
+2023-04-11 17:24:18,083 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:18,423 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:18,766 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:19,108 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:19,450 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:19,458 INFO    Thread-13 :14875 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/output.log
+2023-04-11 17:24:19,791 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:20,133 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:20,474 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:20,816 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:21,156 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:21,480 INFO    Thread-13 :14875 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/output.log
+2023-04-11 17:24:21,499 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:21,840 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:22,183 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:22,233 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:22,233 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:23,503 INFO    Thread-13 :14875 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/output.log
+2023-04-11 17:24:24,364 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:24,365 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:24,366 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:24,366 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:24,482 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:24,600 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:24,600 DEBUG   SenderThread:14875 [sender.py:send():303] send: history
+2023-04-11 17:24:24,601 DEBUG   SenderThread:14875 [sender.py:send():303] send: summary
+2023-04-11 17:24:24,603 INFO    SenderThread:14875 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-11 17:24:24,824 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:25,165 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:25,506 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:25,526 INFO    Thread-13 :14875 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/output.log
+2023-04-11 17:24:25,527 INFO    Thread-13 :14875 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/wandb-summary.json
+2023-04-11 17:24:25,848 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:26,187 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:26,530 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:26,661 DEBUG   SenderThread:14875 [sender.py:send():303] send: stats
+2023-04-11 17:24:26,872 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:27,214 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:27,550 INFO    Thread-13 :14875 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/output.log
+2023-04-11 17:24:27,555 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:27,897 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:28,237 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:28,579 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:28,922 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:29,264 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:29,574 INFO    Thread-13 :14875 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/output.log
+2023-04-11 17:24:29,604 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:29,947 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:30,287 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:30,629 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:30,970 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:31,313 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:31,598 INFO    Thread-13 :14875 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/output.log
+2023-04-11 17:24:31,653 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:31,996 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:32,336 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:32,679 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:32,869 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: stop_status
+2023-04-11 17:24:32,870 DEBUG   SenderThread:14875 [sender.py:send_request():317] send_request: stop_status
+2023-04-11 17:24:33,019 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:33,139 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:33,140 DEBUG   SenderThread:14875 [sender.py:send():303] send: history
+2023-04-11 17:24:33,140 DEBUG   SenderThread:14875 [sender.py:send():303] send: summary
+2023-04-11 17:24:33,143 INFO    SenderThread:14875 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-11 17:24:33,362 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:33,621 INFO    Thread-13 :14875 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/output.log
+2023-04-11 17:24:33,622 INFO    Thread-13 :14875 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/wandb-summary.json
+2023-04-11 17:24:33,702 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:34,046 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:34,387 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:34,729 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:35,070 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:35,413 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:35,646 INFO    Thread-13 :14875 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/output.log
+2023-04-11 17:24:35,753 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:36,095 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:36,436 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:36,779 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:37,120 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:37,462 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:37,670 INFO    Thread-13 :14875 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/output.log
+2023-04-11 17:24:37,803 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:38,145 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:38,486 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:38,829 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:39,171 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:39,514 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:39,693 INFO    Thread-13 :14875 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/output.log
+2023-04-11 17:24:39,855 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:40,197 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:40,538 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:40,881 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:41,221 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:41,564 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:41,679 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:41,680 DEBUG   SenderThread:14875 [sender.py:send():303] send: history
+2023-04-11 17:24:41,681 DEBUG   SenderThread:14875 [sender.py:send():303] send: summary
+2023-04-11 17:24:41,684 INFO    SenderThread:14875 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-11 17:24:41,718 INFO    Thread-13 :14875 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/output.log
+2023-04-11 17:24:41,719 INFO    Thread-13 :14875 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/wandb-summary.json
+2023-04-11 17:24:41,905 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:42,247 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:42,588 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:42,931 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:43,273 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:43,615 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:43,742 INFO    Thread-13 :14875 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/output.log
+2023-04-11 17:24:43,957 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:44,300 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:44,640 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:44,983 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:45,323 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:45,666 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:45,765 INFO    Thread-13 :14875 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/output.log
+2023-04-11 17:24:46,007 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:46,349 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:46,690 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:47,032 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:47,373 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:47,715 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:47,788 INFO    Thread-13 :14875 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/output.log
+2023-04-11 17:24:47,936 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: stop_status
+2023-04-11 17:24:47,936 DEBUG   SenderThread:14875 [sender.py:send_request():317] send_request: stop_status
+2023-04-11 17:24:48,057 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:48,399 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:48,740 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:49,084 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:49,134 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:49,135 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:49,811 INFO    Thread-13 :14875 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/output.log
+2023-04-11 17:24:50,824 INFO    Thread-13 :14875 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/output.log
+2023-04-11 17:24:51,244 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:51,313 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:51,314 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:51,314 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:51,381 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:51,497 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:51,497 DEBUG   SenderThread:14875 [sender.py:send():303] send: history
+2023-04-11 17:24:51,498 DEBUG   SenderThread:14875 [sender.py:send():303] send: summary
+2023-04-11 17:24:51,501 INFO    SenderThread:14875 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-11 17:24:51,722 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:51,837 INFO    Thread-13 :14875 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/output.log
+2023-04-11 17:24:51,838 INFO    Thread-13 :14875 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/wandb-summary.json
+2023-04-11 17:24:52,064 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:52,408 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:52,750 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:52,849 INFO    Thread-13 :14875 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/output.log
+2023-04-11 17:24:53,090 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:53,433 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:53,774 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:53,861 INFO    Thread-13 :14875 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/output.log
+2023-04-11 17:24:54,117 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:54,458 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:54,801 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:55,147 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:55,493 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:55,836 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:55,885 INFO    Thread-13 :14875 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/output.log
+2023-04-11 17:24:56,180 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: partial_history
+2023-04-11 17:24:56,532 DEBUG   SenderThread:14875 [sender.py:send():303] send: exit
+2023-04-11 17:24:56,533 INFO    SenderThread:14875 [sender.py:send_exit():442] handling exit code: 255
+2023-04-11 17:24:56,533 INFO    SenderThread:14875 [sender.py:send_exit():444] handling runtime: 119
+2023-04-11 17:24:56,536 INFO    SenderThread:14875 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-11 17:24:56,537 INFO    SenderThread:14875 [sender.py:send_exit():450] send defer
+2023-04-11 17:24:56,537 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: defer
+2023-04-11 17:24:56,538 INFO    HandlerThread:14875 [handler.py:handle_request_defer():162] handle defer: 0
+2023-04-11 17:24:56,538 DEBUG   SenderThread:14875 [sender.py:send_request():317] send_request: defer
+2023-04-11 17:24:56,538 INFO    SenderThread:14875 [sender.py:send_request_defer():459] handle sender defer: 0
+2023-04-11 17:24:56,539 INFO    SenderThread:14875 [sender.py:transition_state():463] send defer: 1
+2023-04-11 17:24:56,539 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: defer
+2023-04-11 17:24:56,539 INFO    HandlerThread:14875 [handler.py:handle_request_defer():162] handle defer: 1
+2023-04-11 17:24:56,540 INFO    HandlerThread:14875 [system_monitor.py:finish():160] Stopping system monitor
+2023-04-11 17:24:56,540 DEBUG   SystemMonitor:14875 [system_monitor.py:_start():137] Finished system metrics aggregation loop
+2023-04-11 17:24:56,541 DEBUG   SystemMonitor:14875 [system_monitor.py:_start():141] Publishing last batch of metrics
+2023-04-11 17:24:56,542 INFO    HandlerThread:14875 [interfaces.py:finish():175] Joined cpu
+2023-04-11 17:24:56,542 INFO    HandlerThread:14875 [interfaces.py:finish():175] Joined disk
+2023-04-11 17:24:56,546 INFO    HandlerThread:14875 [interfaces.py:finish():175] Joined gpu
+2023-04-11 17:24:56,547 INFO    HandlerThread:14875 [interfaces.py:finish():175] Joined memory
+2023-04-11 17:24:56,547 INFO    HandlerThread:14875 [interfaces.py:finish():175] Joined network
+2023-04-11 17:24:56,547 DEBUG   SenderThread:14875 [sender.py:send_request():317] send_request: defer
+2023-04-11 17:24:56,548 INFO    SenderThread:14875 [sender.py:send_request_defer():459] handle sender defer: 1
+2023-04-11 17:24:56,548 INFO    SenderThread:14875 [sender.py:transition_state():463] send defer: 2
+2023-04-11 17:24:56,548 DEBUG   SenderThread:14875 [sender.py:send():303] send: stats
+2023-04-11 17:24:56,548 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: defer
+2023-04-11 17:24:56,549 INFO    HandlerThread:14875 [handler.py:handle_request_defer():162] handle defer: 2
+2023-04-11 17:24:56,550 DEBUG   SenderThread:14875 [sender.py:send():303] send: history
+2023-04-11 17:24:56,550 DEBUG   SenderThread:14875 [sender.py:send():303] send: summary
+2023-04-11 17:24:56,552 INFO    SenderThread:14875 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-11 17:24:56,554 DEBUG   SenderThread:14875 [sender.py:send_request():317] send_request: defer
+2023-04-11 17:24:56,554 INFO    SenderThread:14875 [sender.py:send_request_defer():459] handle sender defer: 2
+2023-04-11 17:24:56,554 INFO    SenderThread:14875 [sender.py:transition_state():463] send defer: 3
+2023-04-11 17:24:56,555 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: defer
+2023-04-11 17:24:56,555 INFO    HandlerThread:14875 [handler.py:handle_request_defer():162] handle defer: 3
+2023-04-11 17:24:56,555 DEBUG   SenderThread:14875 [sender.py:send_request():317] send_request: defer
+2023-04-11 17:24:56,555 INFO    SenderThread:14875 [sender.py:send_request_defer():459] handle sender defer: 3
+2023-04-11 17:24:56,556 INFO    SenderThread:14875 [sender.py:transition_state():463] send defer: 4
+2023-04-11 17:24:56,556 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: defer
+2023-04-11 17:24:56,556 INFO    HandlerThread:14875 [handler.py:handle_request_defer():162] handle defer: 4
+2023-04-11 17:24:56,557 DEBUG   SenderThread:14875 [sender.py:send():303] send: summary
+2023-04-11 17:24:56,559 INFO    SenderThread:14875 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-04-11 17:24:56,560 DEBUG   SenderThread:14875 [sender.py:send_request():317] send_request: defer
+2023-04-11 17:24:56,561 INFO    SenderThread:14875 [sender.py:send_request_defer():459] handle sender defer: 4
+2023-04-11 17:24:56,561 INFO    SenderThread:14875 [sender.py:transition_state():463] send defer: 5
+2023-04-11 17:24:56,561 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: defer
+2023-04-11 17:24:56,562 INFO    HandlerThread:14875 [handler.py:handle_request_defer():162] handle defer: 5
+2023-04-11 17:24:56,562 DEBUG   SenderThread:14875 [sender.py:send_request():317] send_request: defer
+2023-04-11 17:24:56,562 INFO    SenderThread:14875 [sender.py:send_request_defer():459] handle sender defer: 5
+2023-04-11 17:24:56,562 INFO    SenderThread:14875 [sender.py:transition_state():463] send defer: 6
+2023-04-11 17:24:56,563 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: defer
+2023-04-11 17:24:56,563 INFO    HandlerThread:14875 [handler.py:handle_request_defer():162] handle defer: 6
+2023-04-11 17:24:56,563 DEBUG   SenderThread:14875 [sender.py:send_request():317] send_request: defer
+2023-04-11 17:24:56,563 INFO    SenderThread:14875 [sender.py:send_request_defer():459] handle sender defer: 6
+2023-04-11 17:24:56,897 INFO    Thread-13 :14875 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/wandb-summary.json
+2023-04-11 17:24:57,487 INFO    SenderThread:14875 [sender.py:transition_state():463] send defer: 7
+2023-04-11 17:24:57,487 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: defer
+2023-04-11 17:24:57,488 INFO    HandlerThread:14875 [handler.py:handle_request_defer():162] handle defer: 7
+2023-04-11 17:24:57,488 DEBUG   SenderThread:14875 [sender.py:send_request():317] send_request: defer
+2023-04-11 17:24:57,488 INFO    SenderThread:14875 [sender.py:send_request_defer():459] handle sender defer: 7
+2023-04-11 17:24:57,488 INFO    SenderThread:14875 [dir_watcher.py:finish():362] shutting down directory watcher
+2023-04-11 17:24:57,533 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: poll_exit
+2023-04-11 17:24:57,934 INFO    SenderThread:14875 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/output.log
+2023-04-11 17:24:57,936 INFO    SenderThread:14875 [dir_watcher.py:finish():392] scan: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files
+2023-04-11 17:24:57,938 INFO    SenderThread:14875 [dir_watcher.py:finish():406] scan save: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/conda-environment.yaml conda-environment.yaml
+2023-04-11 17:24:57,945 INFO    SenderThread:14875 [dir_watcher.py:finish():406] scan save: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/config.yaml config.yaml
+2023-04-11 17:24:57,953 INFO    SenderThread:14875 [dir_watcher.py:finish():406] scan save: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/diff.patch diff.patch
+2023-04-11 17:24:57,953 INFO    SenderThread:14875 [dir_watcher.py:finish():406] scan save: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/output.log output.log
+2023-04-11 17:24:57,960 INFO    SenderThread:14875 [dir_watcher.py:finish():406] scan save: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/requirements.txt requirements.txt
+2023-04-11 17:24:57,965 INFO    SenderThread:14875 [dir_watcher.py:finish():406] scan save: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/wandb-metadata.json wandb-metadata.json
+2023-04-11 17:24:57,965 INFO    SenderThread:14875 [dir_watcher.py:finish():406] scan save: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/wandb-summary.json wandb-summary.json
+2023-04-11 17:24:57,976 INFO    SenderThread:14875 [dir_watcher.py:finish():406] scan save: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/code/train_cls.py code/train_cls.py
+2023-04-11 17:24:57,976 INFO    SenderThread:14875 [sender.py:transition_state():463] send defer: 8
+2023-04-11 17:24:57,977 DEBUG   SenderThread:14875 [sender.py:send_request():317] send_request: poll_exit
+2023-04-11 17:24:57,977 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: defer
+2023-04-11 17:24:57,977 INFO    HandlerThread:14875 [handler.py:handle_request_defer():162] handle defer: 8
+2023-04-11 17:24:57,978 DEBUG   SenderThread:14875 [sender.py:send_request():317] send_request: defer
+2023-04-11 17:24:57,978 INFO    SenderThread:14875 [sender.py:send_request_defer():459] handle sender defer: 8
+2023-04-11 17:24:57,978 INFO    SenderThread:14875 [file_pusher.py:finish():168] shutting down file pusher
+2023-04-11 17:24:58,338 INFO    Thread-23 :14875 [upload_job.py:push():143] Uploaded file /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/wandb-summary.json
+2023-04-11 17:24:58,340 INFO    Thread-21 :14875 [upload_job.py:push():143] Uploaded file /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/config.yaml
+2023-04-11 17:24:58,340 INFO    Thread-20 :14875 [upload_job.py:push():143] Uploaded file /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/conda-environment.yaml
+2023-04-11 17:24:58,356 INFO    Thread-22 :14875 [upload_job.py:push():143] Uploaded file /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/files/output.log
+2023-04-11 17:24:58,533 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: poll_exit
+2023-04-11 17:24:58,534 DEBUG   SenderThread:14875 [sender.py:send_request():317] send_request: poll_exit
+2023-04-11 17:24:58,557 INFO    Thread-12 :14875 [sender.py:transition_state():463] send defer: 9
+2023-04-11 17:24:58,557 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: defer
+2023-04-11 17:24:58,558 INFO    HandlerThread:14875 [handler.py:handle_request_defer():162] handle defer: 9
+2023-04-11 17:24:58,558 DEBUG   SenderThread:14875 [sender.py:send_request():317] send_request: defer
+2023-04-11 17:24:58,558 INFO    SenderThread:14875 [sender.py:send_request_defer():459] handle sender defer: 9
+2023-04-11 17:24:58,559 INFO    SenderThread:14875 [file_pusher.py:join():173] waiting for file pusher
+2023-04-11 17:24:58,559 INFO    SenderThread:14875 [sender.py:transition_state():463] send defer: 10
+2023-04-11 17:24:58,559 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: defer
+2023-04-11 17:24:58,559 INFO    HandlerThread:14875 [handler.py:handle_request_defer():162] handle defer: 10
+2023-04-11 17:24:58,560 DEBUG   SenderThread:14875 [sender.py:send_request():317] send_request: defer
+2023-04-11 17:24:58,560 INFO    SenderThread:14875 [sender.py:send_request_defer():459] handle sender defer: 10
+2023-04-11 17:24:58,788 INFO    SenderThread:14875 [sender.py:transition_state():463] send defer: 11
+2023-04-11 17:24:58,788 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: defer
+2023-04-11 17:24:58,789 INFO    HandlerThread:14875 [handler.py:handle_request_defer():162] handle defer: 11
+2023-04-11 17:24:58,789 DEBUG   SenderThread:14875 [sender.py:send_request():317] send_request: defer
+2023-04-11 17:24:58,789 INFO    SenderThread:14875 [sender.py:send_request_defer():459] handle sender defer: 11
+2023-04-11 17:24:58,790 INFO    SenderThread:14875 [sender.py:transition_state():463] send defer: 12
+2023-04-11 17:24:58,790 DEBUG   SenderThread:14875 [sender.py:send():303] send: final
+2023-04-11 17:24:58,790 DEBUG   SenderThread:14875 [sender.py:send():303] send: footer
+2023-04-11 17:24:58,790 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: defer
+2023-04-11 17:24:58,791 INFO    HandlerThread:14875 [handler.py:handle_request_defer():162] handle defer: 12
+2023-04-11 17:24:58,791 DEBUG   SenderThread:14875 [sender.py:send_request():317] send_request: defer
+2023-04-11 17:24:58,791 INFO    SenderThread:14875 [sender.py:send_request_defer():459] handle sender defer: 12
+2023-04-11 17:24:58,792 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: poll_exit
+2023-04-11 17:24:58,793 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: poll_exit
+2023-04-11 17:24:58,793 DEBUG   SenderThread:14875 [sender.py:send_request():317] send_request: poll_exit
+2023-04-11 17:24:58,793 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: server_info
+2023-04-11 17:24:58,793 DEBUG   SenderThread:14875 [sender.py:send_request():317] send_request: poll_exit
+2023-04-11 17:24:58,794 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: get_summary
+2023-04-11 17:24:58,794 DEBUG   SenderThread:14875 [sender.py:send_request():317] send_request: server_info
+2023-04-11 17:24:58,795 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: sampled_history
+2023-04-11 17:24:58,923 INFO    MainThread:14875 [wandb_run.py:_footer_history_summary_info():3408] rendering history
+2023-04-11 17:24:58,924 INFO    MainThread:14875 [wandb_run.py:_footer_history_summary_info():3440] rendering summary
+2023-04-11 17:24:58,924 INFO    MainThread:14875 [wandb_run.py:_footer_sync_info():3364] logging synced files
+2023-04-11 17:24:58,925 DEBUG   HandlerThread:14875 [handler.py:handle_request():139] handle_request: shutdown
+2023-04-11 17:24:58,925 INFO    HandlerThread:14875 [handler.py:finish():814] shutting down handler
+2023-04-11 17:24:59,790 INFO    WriterThread:14875 [datastore.py:close():279] close: /mnt/c/users/sssak/desktop/VNPerformer/wandb/run-20230411_172256-1lqgfvrd/run-1lqgfvrd.wandb
+2023-04-11 17:24:59,923 INFO    SenderThread:14875 [sender.py:finish():1331] shutting down sender
+2023-04-11 17:24:59,924 INFO    SenderThread:14875 [file_pusher.py:finish():168] shutting down file pusher
+2023-04-11 17:24:59,924 INFO    SenderThread:14875 [file_pusher.py:join():173] waiting for file pusher
+2023-04-11 17:24:59,927 INFO    MainThread:14875 [internal.py:handle_exit():77] Internal process exited
